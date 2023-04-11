@@ -1,4 +1,4 @@
-﻿using IntexII_0305.Models;
+﻿// using IntexII_0305.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -23,10 +23,37 @@ namespace IntexII_0305.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult AccountManager()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
+
+        public IActionResult BurialSummary()
+        {
+            return View();
+        }
+
+        public IActionResult RecordManager()
+        {
+            return View();
+        }
+
+        public IActionResult SexPredictor()
+        {
+            return View();
+        }
+
+        public IActionResult UnsupervisedFindings()
+        {
+            return View();
+        }
+
+        // [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        // public IActionResult Error()
+        // {
+        //     return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        // }
+
+
     }
 }
