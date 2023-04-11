@@ -2,7 +2,29 @@
     ViewData["Title"] = "Home Page";
 }
 
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#002E5D"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "type": "opt-out",
+  "content": {
+    "href": "www.something.com"
+  }
+});
+</script>
+
 <div class="text-center">
     <h1 class="display-4">Welcome to Fag el-Gamous</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+
 </div>
