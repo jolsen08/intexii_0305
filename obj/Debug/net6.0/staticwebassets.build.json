@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sT0Jc82dB2Kzs9zjrDfJH9poYJ5RNDmuzN1nd+e4NRI=",
+  "Hash": "jTQRrDJZ0kQhyFBhMXttTfVqAQY7qY8TNXq9MW+vs0Q=",
   "Source": "IntexII_0305",
   "BasePath": "_content/IntexII_0305",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\BYU Rental\\Documents\\IntexII\\IntexII_0305\\wwwroot\\img\\title_mummies.jpeg",
+      "SourceId": "IntexII_0305",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\BYU Rental\\Documents\\IntexII\\IntexII_0305\\wwwroot\\",
+      "BasePath": "_content/IntexII_0305",
+      "RelativePath": "img/title_mummies.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\title_mummies.jpeg"
     },
     {
       "Identity": "C:\\Users\\BYU Rental\\Documents\\IntexII\\IntexII_0305\\wwwroot\\js\\site.js",

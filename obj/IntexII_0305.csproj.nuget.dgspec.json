@@ -68,6 +68,10 @@
               "target": "Package",
               "version": "[6.0.15, )"
             },
+            "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.14.1, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.13, )"
@@ -75,6 +79,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[6.0.8, )"
+            },
+            "System.Numerics.Tensors": {
+              "target": "Package",
+              "version": "[0.1.0, )"
             }
           },
           "imports": [

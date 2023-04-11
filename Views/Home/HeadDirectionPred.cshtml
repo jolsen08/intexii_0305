@@ -1,12 +1,55 @@
+using Microsoft.ML.OnnxRunTime;
+using Microsoft.ML.OnnxRuntime.Tensors;
+using System.Linq; 
+
 @{
     ViewData["Title"] = "Sex Predictor";
 }
 
 <div class="text-center">
     <h1 class="display-4">Head Direction Predictor</h1>
-    <p>Predicting Mummies Head Direction</a>.</p>
+    <p>Predicting Mummies Head Direction</p>
 </div>
 
 <div>
-    <form method="post"></form>
+    <form method="post" action="HeadDirectionPred">
+        <label for="square_north_south">Square North South:</label>
+        <input for="square_north_south" /><br />
+
+        <label for="body_depth">Depth:</label>
+        <input for="body_depth" /><br />
+
+        <label for="south_to_head">South to Head:</label>
+        <input for="south_to_head" /><br />
+
+        <label for="square_east_west">Square East West:</label>
+        <input for="square_east_west" /><br />
+
+        <label for="west_to_head">West to Head:</label>
+        <input for="west_to_head" /><br />
+
+        <label for="west_to_feet">West to Feet:</label>
+        <input for="west_to_feet" /><br />
+
+        <label for="south_to_feet">South to Feet:</label>
+        <input for="south_to_feet" /><br />
+
+        <label for="north_south">North/South:</label>
+        <input for="north_south" /><br />
+
+        <label for="east_west">East/West:</label>
+        <input for="east_west" /><br />
+
+        <label for="adult_subadult">Adult/Subadult:</label>
+        <input for="adult_subadult" /><br />
+
+        <label for="wrapping">Wrapping:</label>
+        <input for="wrapping" /><br />
+
+        <label for="area">Area:</label>
+        <input for="area" /><br />
+
+        <button type="Submit" asp-action="HeadDirectionPred">Submit</button>
+    </form>
+
 </div>
