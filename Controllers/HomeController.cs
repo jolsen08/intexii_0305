@@ -38,7 +38,7 @@ namespace IntexII_0305.Controllers
             return View();
         }
 
-        public IActionResult SexPredictor()
+        public IActionResult HeadDirectionPred()
         {
             return View();
         }
