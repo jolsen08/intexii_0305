@@ -2,6 +2,7 @@ using IntexII_0305.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
+using IntexII_0305.Areas.Identity.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
