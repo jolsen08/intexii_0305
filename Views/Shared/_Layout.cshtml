@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/IntexII_0305.styles.css" asp-append-version="true" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Fag el-Gamous</a>
+        <nav class="navbar-expand-sm navbar-toggleable-sm navbar-light bg-white box-shadow">
+            <div class="container-fluid" style="background-color: #002E5D; display: flex; flex-direction: row;">
+                <a class="navbar-brand site-header" asp-area="" asp-controller="Home" asp-action="Index" style="color: white; padding: 15px 0 15px 0; margin: 0px; margin-right: 10px">Fag el-Gamous</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,19 +22,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" style="color: white;" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="BurialSummary">Burial Summary</a>
+                            <a class="nav-link" style="color: white;" asp-area="" asp-controller="Home" asp-action="BurialSummary">Burial Summary</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="HeadDirectionPred">Head Direction Predictor</a>
+                            <a class="nav-link" style="color: white;" asp-area="" asp-controller="Home" asp-action="HeadDirectionPred">Head Direction Prediction</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="UnsupervisedFindings">Findings</a>
+                            <a class="nav-link" style="color: white;" asp-area="" asp-controller="Home" asp-action="UnsupervisedFindings">Findings</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> 
+                            <a class="nav-link" style="color: white;" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />
@@ -47,9 +48,9 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - IntexII_0305 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="border-top footer text-muted" style="background-color: #002E5D;">
+        <div class="container" style="color: white;">
+            &copy; 2023 - Mummy Database - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
