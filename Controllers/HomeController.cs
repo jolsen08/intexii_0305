@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-//using Microsoft.ML.OnnxRuntime.Tensors;
 using IntexII_0305.Models.ViewModels;
 using IntexII_0305.Models;
-//using Microsoft.ML.OnnxRuntime;
+using Microsoft.ML.OnnxRuntime;
+using Microsoft.ML.OnnxRuntime.Tensors;
+
 
 namespace IntexII_0305.Controllers
 {
@@ -70,7 +71,7 @@ namespace IntexII_0305.Controllers
 
 
 
-       /* [HttpPost]
+        [HttpPost]
         public IActionResult HeadDirectionPred(float square_north_south, float body_depth, float south_to_head, float square_east_west, float west_to_head, float west_to_feet, float south_to_feet, string wrapping, string area)
         {
             float wrapping_B;
@@ -148,7 +149,7 @@ namespace IntexII_0305.Controllers
             float[] inputData = { square_north_south, body_depth, south_to_head, square_east_west, west_to_head, west_to_feet, south_to_feet, wrapping_B, wrapping_H, wrapping_W, area_NE, area_NNW, area_NW, area_SE, area_SW };
 
             var session = new InferenceSession("C:\\Users\\BYU Rental\\Documents\\IntexII\\IntexII_0305\\model.onnx");
-        
+
             var tensor = new DenseTensor<float>(inputData, new int[] { 1, inputData.Length });
 
             var inputs = new List<NamedOnnxValue>
@@ -162,7 +163,7 @@ namespace IntexII_0305.Controllers
             return View("HeadDirectionPred", output[0]);
 
 
-        }*/
+        }
 
         public IActionResult UnsupervisedFindings()
         {
