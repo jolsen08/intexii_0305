@@ -1,4 +1,4 @@
 .env
 *.dll
 *.pdb
-/bin
+bin/
