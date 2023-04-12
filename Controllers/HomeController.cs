@@ -180,6 +180,7 @@ namespace IntexII_0305.Controllers
             float[] inputData = { square_north_south, body_depth, south_to_head, square_east_west, west_to_head, west_to_feet, south_to_feet, north_south_N, east_west_E, east_west_W, adult_subadult_A, adult_subadult_C, wrapping_B, wrapping_H, wrapping_W, area_NE, area_NNW, area_NW, area_SE, area_SW };
 
             var session = new InferenceSession("C:\\Users\\BYU Rental\\Documents\\IntexII\\IntexII_0305\\model.onnx");
+        
             var tensor = new DenseTensor<float>(inputData, new int[] { 1, inputData.Length });
 
             var inputs = new List<NamedOnnxValue>
