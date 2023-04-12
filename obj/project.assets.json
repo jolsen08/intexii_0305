@@ -3027,17 +3027,6 @@
           }
         }
       },
-      "System.Numerics.Tensors/0.1.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard1.1/System.Numerics.Tensors.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.1/System.Numerics.Tensors.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.ObjectModel/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -8519,24 +8508,6 @@
         "system.net.sockets.nuspec"
       ]
     },
-    "System.Numerics.Tensors/0.1.0": {
-      "sha512": "AD8veI1AA0E9eBMmvM9gzwBNKh5JI34GNfn0KxWXqzKwypKB3EsRW2XKrvb9ussZxYGMuEUfLb929V7/I3MW8g==",
-      "type": "package",
-      "path": "system.numerics.tensors/0.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netstandard1.1/System.Numerics.Tensors.dll",
-        "lib/netstandard1.1/System.Numerics.Tensors.xml",
-        "ref/netstandard1.1/System.Numerics.Tensors.dll",
-        "system.numerics.tensors.0.1.0.nupkg.sha512",
-        "system.numerics.tensors.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "System.ObjectModel/4.3.0": {
       "sha512": "bdX+80eKv9bN6K4N+d77OankKHGn6CH711a6fcOpMQu2Fckp/Ft4L/kW9WznHpyR0NRAvJutzOMHNNlBGvxQzQ==",
       "type": "package",
@@ -10847,8 +10818,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.15",
       "Microsoft.ML.OnnxRuntime >= 1.14.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.13",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.8",
-      "System.Numerics.Tensors >= 0.1.0"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.8"
     ]
   },
   "packageFolders": {
@@ -10929,10 +10899,6 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
             "version": "[6.0.8, )"
-          },
-          "System.Numerics.Tensors": {
-            "target": "Package",
-            "version": "[0.1.0, )"
           }
         },
         "imports": [
