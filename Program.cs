@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
 using IntexII_0305.Areas.Identity.Data;
+using IntexII_0305.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,11 +11,13 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(connectionString));
-    //options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
-// builder.Services.AddDbContext<IdentityDbContext>(options =>
-//     options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddDbContext<IntexContext>(options =>
+    options.UseNpgsql(connectionString));
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+builder.Services.AddScoped<IIntexRepository, EFIntexRepository>();
+
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
