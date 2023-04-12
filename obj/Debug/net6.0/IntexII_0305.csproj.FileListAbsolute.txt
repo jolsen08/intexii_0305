@@ -283,6 +283,9 @@ C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\System.Diagn
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\package-lock.json
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\package.json
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\Microsoft.ML.OnnxRuntime.dll
+C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\linux-x64\native\libonnxruntime.so
+C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\win-x64\native\onnxruntime.dll
+C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\win-x64\native\onnxruntime.lib
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\android\native\onnxruntime.aar
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\ios\native\onnxruntime.xcframework\Info.plist
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\ios\native\onnxruntime.xcframework\ios-arm64\onnxruntime.framework\Headers\coreml_provider_factory.h
@@ -300,7 +303,6 @@ C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\ios
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\ios\native\onnxruntime.xcframework\ios-arm64_x86_64-simulator\onnxruntime.framework\Info.plist
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\ios\native\onnxruntime.xcframework\ios-arm64_x86_64-simulator\onnxruntime.framework\onnxruntime
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\linux-arm64\native\libonnxruntime.so
-C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\linux-x64\native\libonnxruntime.so
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\osx.10.14-arm64\native\libonnxruntime.dylib
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\osx.10.14-x64\native\libonnxruntime.dylib
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\win-arm\native\onnxruntime.dll
@@ -311,12 +313,9 @@ C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\win
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\win-arm64\native\onnxruntime.lib
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\win-arm64\native\onnxruntime_providers_shared.dll
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\win-arm64\native\onnxruntime_providers_shared.lib
-C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\win-x64\native\onnxruntime.dll
-C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\win-x64\native\onnxruntime.lib
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\win-x64\native\onnxruntime_providers_shared.dll
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\win-x64\native\onnxruntime_providers_shared.lib
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\win-x86\native\onnxruntime.dll
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\win-x86\native\onnxruntime.lib
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\win-x86\native\onnxruntime_providers_shared.dll
 C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\runtimes\win-x86\native\onnxruntime_providers_shared.lib
-C:\Users\BYU Rental\Documents\IntexII\IntexII_0305\bin\Debug\net6.0\onnxruntime_providers_shared.dll

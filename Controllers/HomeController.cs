@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using Microsoft.ML.OnnxRuntime.Tensors;
-using Microsoft.ML.OnnxRuntime;
+//using Microsoft.ML.OnnxRuntime.Tensors;
 using IntexII_0305.Models.ViewModels;
 using IntexII_0305.Models;
+//using Microsoft.ML.OnnxRuntime;
 
 namespace IntexII_0305.Controllers
 {
@@ -31,6 +31,7 @@ namespace IntexII_0305.Controllers
             return View();
         }
 
+      
         public IActionResult BurialSummary(string burialArea, int pageNum = 1)
         {
             int pageSize = 20;
@@ -67,7 +68,9 @@ namespace IntexII_0305.Controllers
             return View();
         }
 
-        [HttpPost]
+
+
+       /* [HttpPost]
         public IActionResult HeadDirectionPred(float square_north_south, float body_depth, float south_to_head, float square_east_west, float west_to_head, float west_to_feet, float south_to_feet, string wrapping, string area)
         {
             float wrapping_B;
@@ -158,7 +161,8 @@ namespace IntexII_0305.Controllers
 
             return View("HeadDirectionPred", output[0]);
 
-        }
+
+        }*/
 
         public IActionResult UnsupervisedFindings()
         {
