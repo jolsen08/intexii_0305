@@ -68,13 +68,8 @@ namespace IntexII_0305.Controllers
         }
 
         [HttpPost]
-        public IActionResult HeadDirectionPred(float square_north_south, float body_depth, float south_to_head, float square_east_west, float west_to_head, float west_to_feet, float south_to_feet, string north_south, string east_west, string adult_subadult, string wrapping, string area)
+        public IActionResult HeadDirectionPred(float square_north_south, float body_depth, float south_to_head, float square_east_west, float west_to_head, float west_to_feet, float south_to_feet, string wrapping, string area)
         {
-            float north_south_N;
-            float east_west_E;
-            float east_west_W;
-            float adult_subadult_A;
-            float adult_subadult_C;
             float wrapping_B;
             float wrapping_H;
             float wrapping_W;
@@ -84,36 +79,6 @@ namespace IntexII_0305.Controllers
             float area_SE;
             float area_SW;
 
-            if (north_south == "N")
-            {
-                north_south_N = 1;
-            }
-            else
-            {
-                north_south_N = 0;
-            }
-
-            if (east_west == "E")
-            {
-                east_west_E = 1;
-                east_west_W = 0;
-            }
-            else
-            {
-                east_west_E = 0;
-                east_west_W = 1;
-            }
-
-            if (adult_subadult == "A")
-            {
-                adult_subadult_A = 1;
-                adult_subadult_C = 0;
-            }
-            else
-            {
-                adult_subadult_A = 0;
-                adult_subadult_C = 1;
-            }
 
             if (wrapping == "B")
             {
@@ -177,7 +142,7 @@ namespace IntexII_0305.Controllers
 
 
 
-            float[] inputData = { square_north_south, body_depth, south_to_head, square_east_west, west_to_head, west_to_feet, south_to_feet, north_south_N, east_west_E, east_west_W, adult_subadult_A, adult_subadult_C, wrapping_B, wrapping_H, wrapping_W, area_NE, area_NNW, area_NW, area_SE, area_SW };
+            float[] inputData = { square_north_south, body_depth, south_to_head, square_east_west, west_to_head, west_to_feet, south_to_feet, wrapping_B, wrapping_H, wrapping_W, area_NE, area_NNW, area_NW, area_SE, area_SW };
 
             var session = new InferenceSession("C:\\Users\\BYU Rental\\Documents\\IntexII\\IntexII_0305\\model.onnx");
         
