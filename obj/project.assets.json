@@ -1515,10 +1515,10 @@
           }
         }
       },
-      "Microsoft.ML.OnnxRuntime/1.14.1": {
+      "Microsoft.ML.OnnxRuntime/1.12.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ML.OnnxRuntime.Managed": "1.14.1"
+          "Microsoft.ML.OnnxRuntime.Managed": "1.12.1"
         },
         "build": {
           "build/netstandard2.0/Microsoft.ML.OnnxRuntime.props": {},
@@ -1671,7 +1671,7 @@
           }
         }
       },
-      "Microsoft.ML.OnnxRuntime.Managed/1.14.1": {
+      "Microsoft.ML.OnnxRuntime.Managed/1.12.1": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.3"
@@ -5668,10 +5668,10 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "Microsoft.ML.OnnxRuntime/1.14.1": {
-      "sha512": "6tCB0S2lPh1ztFZeBtCNLKdc1Fj+DapzQZBtRiEOb1H6LEgGPS7bGWjI/FnfztoOPCOKffgwzly/OmNP7y0dzQ==",
+    "Microsoft.ML.OnnxRuntime/1.12.1": {
+      "sha512": "unDeEFxeq+u+N6rdKHPoaHU7yqyZOGQe020RlpzVlwSzeFs/smp70rSsV5CJQv+bqToE6xAS6tquipVeUEJUdw==",
       "type": "package",
-      "path": "microsoft.ml.onnxruntime/1.14.1",
+      "path": "microsoft.ml.onnxruntime/1.12.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5702,7 +5702,7 @@
         "buildTransitive/net6.0-ios15.4/Microsoft.ML.OnnxRuntime.targets",
         "buildTransitive/net6.0-macos12.3/Microsoft.ML.OnnxRuntime.targets",
         "buildTransitive/xamarinios10/Microsoft.ML.OnnxRuntime.targets",
-        "microsoft.ml.onnxruntime.1.14.1.nupkg.sha512",
+        "microsoft.ml.onnxruntime.1.12.1.nupkg.sha512",
         "microsoft.ml.onnxruntime.nuspec",
         "runtimes/android/native/onnxruntime.aar",
         "runtimes/ios/native/onnxruntime.xcframework/Info.plist",
@@ -5742,10 +5742,10 @@
         "runtimes/win-x86/native/onnxruntime_providers_shared.lib"
       ]
     },
-    "Microsoft.ML.OnnxRuntime.Managed/1.14.1": {
-      "sha512": "Htm4aJu0qO6cdf/UGH+7s3ue8bZX02CyH/fmenBQvUJAXswbLmUInV5eduU+/kwT58uN3ilAJFnWSXbH7EKgYg==",
+    "Microsoft.ML.OnnxRuntime.Managed/1.12.1": {
+      "sha512": "LGppnbggvQ6IsD+PFXhZ9jfKRZ+ws8oTLsujZbgRzysur5cvrMGPC4WJUf+jW/6hYcUqX/kguawW9+HvSIz8yw==",
       "type": "package",
-      "path": "microsoft.ml.onnxruntime.managed/1.14.1",
+      "path": "microsoft.ml.onnxruntime.managed/1.12.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5762,10 +5762,10 @@
         "lib/net6.0-android31.0/Microsoft.ML.OnnxRuntime.dll",
         "lib/net6.0-android31.0/Microsoft.ML.OnnxRuntime.pdb",
         "lib/net6.0-android31.0/Microsoft.ML.OnnxRuntime.xml",
-        "lib/net6.0-ios16.1/Microsoft.ML.OnnxRuntime.dll",
-        "lib/net6.0-ios16.1/Microsoft.ML.OnnxRuntime.pdb",
-        "lib/net6.0-macos13.0/Microsoft.ML.OnnxRuntime.dll",
-        "lib/net6.0-macos13.0/Microsoft.ML.OnnxRuntime.pdb",
+        "lib/net6.0-ios15.4/Microsoft.ML.OnnxRuntime.dll",
+        "lib/net6.0-ios15.4/Microsoft.ML.OnnxRuntime.pdb",
+        "lib/net6.0-macos12.3/Microsoft.ML.OnnxRuntime.dll",
+        "lib/net6.0-macos12.3/Microsoft.ML.OnnxRuntime.pdb",
         "lib/net6.0/Microsoft.ML.OnnxRuntime.dll",
         "lib/net6.0/Microsoft.ML.OnnxRuntime.pdb",
         "lib/netcoreapp3.1/Microsoft.ML.OnnxRuntime.dll",
@@ -5776,7 +5776,7 @@
         "lib/netstandard2.0/Microsoft.ML.OnnxRuntime.pdb",
         "lib/xamarinios10/Microsoft.ML.OnnxRuntime.dll",
         "lib/xamarinios10/Microsoft.ML.OnnxRuntime.pdb",
-        "microsoft.ml.onnxruntime.managed.1.14.1.nupkg.sha512",
+        "microsoft.ml.onnxruntime.managed.1.12.1.nupkg.sha512",
         "microsoft.ml.onnxruntime.managed.nuspec"
       ]
     },
@@ -10816,7 +10816,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.16",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.15",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.15",
-      "Microsoft.ML.OnnxRuntime >= 1.14.1",
+      "Microsoft.ML.OnnxRuntime >= 1.12.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.13",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.8"
     ]
@@ -10890,7 +10890,7 @@
           },
           "Microsoft.ML.OnnxRuntime": {
             "target": "Package",
-            "version": "[1.14.1, )"
+            "version": "[1.12.1, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",

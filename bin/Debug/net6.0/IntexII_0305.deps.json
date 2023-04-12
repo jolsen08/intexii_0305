@@ -14,10 +14,9 @@
           "Microsoft.EntityFrameworkCore.Design": "6.0.16",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.15",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.15",
-          "Microsoft.ML.OnnxRuntime": "1.14.1",
+          "Microsoft.ML.OnnxRuntime": "1.12.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.13",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.8",
-          "System.Numerics.Tensors": "0.1.0"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.8"
         },
         "runtime": {
           "IntexII_0305.dll": {}
@@ -1166,9 +1165,9 @@
           }
         }
       },
-      "Microsoft.ML.OnnxRuntime/1.14.1": {
+      "Microsoft.ML.OnnxRuntime/1.12.1": {
         "dependencies": {
-          "Microsoft.ML.OnnxRuntime.Managed": "1.14.1"
+          "Microsoft.ML.OnnxRuntime.Managed": "1.12.1"
         },
         "runtimeTargets": {
           "runtimes/android/native/onnxruntime.aar": {
@@ -1274,7 +1273,7 @@
           "runtimes/win-arm/native/onnxruntime.dll": {
             "rid": "win-arm",
             "assetType": "native",
-            "fileVersion": "1.14.23.224"
+            "fileVersion": "1.12.22.803"
           },
           "runtimes/win-arm/native/onnxruntime.lib": {
             "rid": "win-arm",
@@ -1284,7 +1283,7 @@
           "runtimes/win-arm/native/onnxruntime_providers_shared.dll": {
             "rid": "win-arm",
             "assetType": "native",
-            "fileVersion": "1.14.23.224"
+            "fileVersion": "1.12.22.803"
           },
           "runtimes/win-arm/native/onnxruntime_providers_shared.lib": {
             "rid": "win-arm",
@@ -1294,7 +1293,7 @@
           "runtimes/win-arm64/native/onnxruntime.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "1.14.23.224"
+            "fileVersion": "1.12.22.803"
           },
           "runtimes/win-arm64/native/onnxruntime.lib": {
             "rid": "win-arm64",
@@ -1304,7 +1303,7 @@
           "runtimes/win-arm64/native/onnxruntime_providers_shared.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "1.14.23.224"
+            "fileVersion": "1.12.22.803"
           },
           "runtimes/win-arm64/native/onnxruntime_providers_shared.lib": {
             "rid": "win-arm64",
@@ -1314,7 +1313,7 @@
           "runtimes/win-x64/native/onnxruntime.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "1.14.23.224"
+            "fileVersion": "1.12.22.803"
           },
           "runtimes/win-x64/native/onnxruntime.lib": {
             "rid": "win-x64",
@@ -1324,7 +1323,7 @@
           "runtimes/win-x64/native/onnxruntime_providers_shared.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "1.14.23.224"
+            "fileVersion": "1.12.22.803"
           },
           "runtimes/win-x64/native/onnxruntime_providers_shared.lib": {
             "rid": "win-x64",
@@ -1334,7 +1333,7 @@
           "runtimes/win-x86/native/onnxruntime.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "1.14.23.224"
+            "fileVersion": "1.12.22.803"
           },
           "runtimes/win-x86/native/onnxruntime.lib": {
             "rid": "win-x86",
@@ -1344,7 +1343,7 @@
           "runtimes/win-x86/native/onnxruntime_providers_shared.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "1.14.23.224"
+            "fileVersion": "1.12.22.803"
           },
           "runtimes/win-x86/native/onnxruntime_providers_shared.lib": {
             "rid": "win-x86",
@@ -1353,7 +1352,7 @@
           }
         }
       },
-      "Microsoft.ML.OnnxRuntime.Managed/1.14.1": {
+      "Microsoft.ML.OnnxRuntime.Managed/1.12.1": {
         "dependencies": {
           "System.Memory": "4.5.5"
         },
@@ -2169,14 +2168,6 @@
           "System.Net.Primitives": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
-        }
-      },
-      "System.Numerics.Tensors/0.1.0": {
-        "runtime": {
-          "lib/netstandard1.1/System.Numerics.Tensors.dll": {
-            "assemblyVersion": "0.1.0.0",
-            "fileVersion": "4.7.18.56406"
-          }
         }
       },
       "System.ObjectModel/4.3.0": {
@@ -3010,19 +3001,19 @@
       "path": "microsoft.identitymodel.tokens/6.8.0",
       "hashPath": "microsoft.identitymodel.tokens.6.8.0.nupkg.sha512"
     },
-    "Microsoft.ML.OnnxRuntime/1.14.1": {
+    "Microsoft.ML.OnnxRuntime/1.12.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6tCB0S2lPh1ztFZeBtCNLKdc1Fj+DapzQZBtRiEOb1H6LEgGPS7bGWjI/FnfztoOPCOKffgwzly/OmNP7y0dzQ==",
-      "path": "microsoft.ml.onnxruntime/1.14.1",
-      "hashPath": "microsoft.ml.onnxruntime.1.14.1.nupkg.sha512"
+      "sha512": "sha512-unDeEFxeq+u+N6rdKHPoaHU7yqyZOGQe020RlpzVlwSzeFs/smp70rSsV5CJQv+bqToE6xAS6tquipVeUEJUdw==",
+      "path": "microsoft.ml.onnxruntime/1.12.1",
+      "hashPath": "microsoft.ml.onnxruntime.1.12.1.nupkg.sha512"
     },
-    "Microsoft.ML.OnnxRuntime.Managed/1.14.1": {
+    "Microsoft.ML.OnnxRuntime.Managed/1.12.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Htm4aJu0qO6cdf/UGH+7s3ue8bZX02CyH/fmenBQvUJAXswbLmUInV5eduU+/kwT58uN3ilAJFnWSXbH7EKgYg==",
-      "path": "microsoft.ml.onnxruntime.managed/1.14.1",
-      "hashPath": "microsoft.ml.onnxruntime.managed.1.14.1.nupkg.sha512"
+      "sha512": "sha512-LGppnbggvQ6IsD+PFXhZ9jfKRZ+ws8oTLsujZbgRzysur5cvrMGPC4WJUf+jW/6hYcUqX/kguawW9+HvSIz8yw==",
+      "path": "microsoft.ml.onnxruntime.managed/1.12.1",
+      "hashPath": "microsoft.ml.onnxruntime.managed.1.12.1.nupkg.sha512"
     },
     "Microsoft.NET.StringTools/17.3.2": {
       "type": "package",
@@ -3569,13 +3560,6 @@
       "sha512": "sha512-m6icV6TqQOAdgt5N/9I5KNpjom/5NFtkmGseEH+AK/hny8XrytLH3+b5M8zL/Ycg3fhIocFpUMyl/wpFnVRvdw==",
       "path": "system.net.sockets/4.3.0",
       "hashPath": "system.net.sockets.4.3.0.nupkg.sha512"
-    },
-    "System.Numerics.Tensors/0.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-AD8veI1AA0E9eBMmvM9gzwBNKh5JI34GNfn0KxWXqzKwypKB3EsRW2XKrvb9ussZxYGMuEUfLb929V7/I3MW8g==",
-      "path": "system.numerics.tensors/0.1.0",
-      "hashPath": "system.numerics.tensors.0.1.0.nupkg.sha512"
     },
     "System.ObjectModel/4.3.0": {
       "type": "package",
