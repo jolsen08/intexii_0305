@@ -18,12 +18,18 @@ namespace IntexII_0305.Controllers
 {
     public class HomeController : Controller
     {
-        private IIntexRepository repo;
-
-        public HomeController(IIntexRepository temp)
+        /*
+                private IIntexRepository repo;*/
+        private IntexContext repo;
+        public HomeController(IntexContext temp)
         {
             repo = temp;
         }
+        
+        // public HomeController(IIntexRepository temp)
+        // {
+        //     repo = temp;
+        // }
        
 
         public IActionResult Index()
@@ -217,59 +223,61 @@ namespace IntexII_0305.Controllers
 
         //CRUD Functionality
 
-        // [HttpGet]
-        // public IActionResult Add()
-        // {
-        //     ViewBag.burialArea = repo.burialArea.ToList();
-        //     return View();
-        // }
+        [HttpGet]
+        public IActionResult Add()
+        {
+            ViewBag.burialArea = repo.burialmain.ToList();
+            return View();
+        }
 
-        // [HttpPost]
-        // public IActionResult Add(RecordsViewModel model)
-        // {
-        //     if (ModelState.IsValid)
-        //     {
-        //         repo.Add(model);
-        //         repo.SaveChanges();
-        //         return RedirectToAction("RecordSummary");
-        //     } // if invalid input
-        //     else return RedirectToAction("Add");
-        // }
+        [HttpPost]
+        public IActionResult Add(Burialmain model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Add");
+        }
+
+        [HttpGet]
+        public IActionResult Edit(long id)
+        {
+           /* ViewBag.burialArea = repo.burialmain.ToList();
+            var record = repo.burialmain.Single(x => x.Id == id);*/
+
+            Burialmain burialmain = repo.burialmain.FirstOrDefault(x => x.Id == id);
+
+            return View("Edit", burialmain);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Burialmain model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Update(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Edit", model.Id);
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var record = repo.burialmain.Single(x => x.Id == id);
+            return View("Delete", record);
+        }
         
-        // [HttpGet]
-        // public IActionResult Edit(int recordId)
-        // {
-        //     ViewBag.burialArea = repo.burialArea.ToList();
-        //     var record = repo.Responses.Single(x => x.recordId == recordId);
-
-        //     return View("Add", record);
-        // }
-
-        // [HttpPost]
-        // public IActionResult Edit(RecordsViewModel model)
-        // {
-        //     if (ModelState.IsValid)
-        //     {
-        //         repo.Update(model);
-        //         repo.SaveChanges();
-        //         return RedirectToAction("RecordSummary");
-        //     } // if invalid input
-        //     else return RedirectToAction("Add");
-        // }
-
-        // [HttpGet]
-        // public IActionResult Delete(int recordId)
-        // {
-        //     var record = repo.Responses.Single(x => x.recordId == recordId);
-        //     return View(record);
-        // }
-        
-        // [HttpPost]
-        // public IActionResult Delete(RecordsViewModel model)
-        // {
-        //     repo.Responses.Remove(model);
-        //     repo.SaveChanges();
-        //     return RedirectToAction("RecordSummary");
-        // }
+        [HttpPost]
+        public IActionResult Delete(Burialmain model)
+        {
+            repo.burialmain.Remove(model);
+            repo.SaveChanges();
+            return RedirectToAction("BurialSummary");
+        }
     }
 }
