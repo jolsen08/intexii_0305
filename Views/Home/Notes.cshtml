@@ -1,0 +1,9 @@
+﻿@model Burialmain
+
+<h3>Notes</h3>
+<p>@Model.Text</p>
+
+<form method="post" asp-action="RecordDetails">
+    <input type="hidden" value="@Model.Id" name="id" />
+    <button type="Submit">Back</button>
+</form>

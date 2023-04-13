@@ -5,7 +5,10 @@ using IntexII_0305.Data;
 using Microsoft.AspNetCore.Identity;
 using System.Configuration;
 using IntexII_0305.Areas.Identity.Data;
-
+using System;
+using System.Collections.Generic;
+using System.Text;
+using IntexII_0305.Models;
 
 namespace IntexII_0305.Data
 {
@@ -17,6 +20,7 @@ namespace IntexII_0305.Data
             : base(options)
         {
         }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql("User ID=postgres;Password=password;Server=localhost;Port=5432;Database=intex2;");

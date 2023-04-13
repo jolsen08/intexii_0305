@@ -4,6 +4,14 @@ using IntexII_0305.Models.ViewModels;
 using IntexII_0305.Models;
 using Microsoft.ML.OnnxRuntime;
 using Microsoft.ML.OnnxRuntime.Tensors;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authorization;
+using System.Drawing.Printing;
+using static System.Reflection.Metadata.BlobBuilder;
 
 
 namespace IntexII_0305.Controllers
@@ -11,6 +19,7 @@ namespace IntexII_0305.Controllers
     public class HomeController : Controller
     {
         private IIntexRepository repo;
+
         public HomeController(IIntexRepository temp)
         {
             repo = temp;
@@ -170,11 +179,97 @@ namespace IntexII_0305.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult RecordDetails()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult RecordDetails(long id)
+        {
+            Burialmain burialmain = repo.burialmain.FirstOrDefault(x => x.Id == id);
+
+            return View("RecordDetails", burialmain);
+        }
+
         // [ResponseCache(Duration = n0, Location = ResponseCacheLocation.None, NoStore = true)]
         // public IActionResult Error()
         // {
         //     return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         // }
 
+        [HttpGet]
+        public IActionResult Notes()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Notes(long id)
+        {
+            Burialmain burialmain = repo.burialmain.FirstOrDefault(x => x.Id == id);
+
+            return View("Notes", burialmain);
+        }
+
+
+
+        //CRUD Functionality
+
+        // [HttpGet]
+        // public IActionResult Add()
+        // {
+        //     ViewBag.burialArea = repo.burialArea.ToList();
+        //     return View();
+        // }
+
+        // [HttpPost]
+        // public IActionResult Add(RecordsViewModel model)
+        // {
+        //     if (ModelState.IsValid)
+        //     {
+        //         repo.Add(model);
+        //         repo.SaveChanges();
+        //         return RedirectToAction("RecordSummary");
+        //     } // if invalid input
+        //     else return RedirectToAction("Add");
+        // }
+        
+        // [HttpGet]
+        // public IActionResult Edit(int recordId)
+        // {
+        //     ViewBag.burialArea = repo.burialArea.ToList();
+        //     var record = repo.Responses.Single(x => x.recordId == recordId);
+
+        //     return View("Add", record);
+        // }
+
+        // [HttpPost]
+        // public IActionResult Edit(RecordsViewModel model)
+        // {
+        //     if (ModelState.IsValid)
+        //     {
+        //         repo.Update(model);
+        //         repo.SaveChanges();
+        //         return RedirectToAction("RecordSummary");
+        //     } // if invalid input
+        //     else return RedirectToAction("Add");
+        // }
+
+        // [HttpGet]
+        // public IActionResult Delete(int recordId)
+        // {
+        //     var record = repo.Responses.Single(x => x.recordId == recordId);
+        //     return View(record);
+        // }
+        
+        // [HttpPost]
+        // public IActionResult Delete(RecordsViewModel model)
+        // {
+        //     repo.Responses.Remove(model);
+        //     repo.SaveChanges();
+        //     return RedirectToAction("RecordSummary");
+        // }
     }
 }

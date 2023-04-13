@@ -18,14 +18,14 @@
         <li><b>Date of Excavation: </b>@Model.Dateofexcavation</li>
         <li><b>Depth: </b>@Model.Depth</li>
     </ul>
-@*
-    <form method="post" asp-page="/Buy">
 
-        <input type="hidden" asp-for="@Model.Burialid" />
+    <form method="post" asp-action="RecordDetails">
+
+        <input type="hidden" value="@Model.Id" name="id"/>
         <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
 
-      @*  <span class="card-text">
-            <button type="Submit" class="btn btn-success float-lg-right">Add To Cart</button>
+        <span class="card-text">
+            <button type="Submit" class="btn btn-success float-lg-right">View More Details</button>
         </span>
-    </form>*@
+    </form>
 </div>

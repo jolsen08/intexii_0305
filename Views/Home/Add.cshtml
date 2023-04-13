@@ -1,0 +1,129 @@
+@{
+    ViewData["Title"] = "Add Record";
+}
+
+@*@model IntexII_0305.Models.Records*@
+
+<div>
+    <h4> Add a new record: </h4>
+<div style="display: grid; grid-template-columns: auto auto">
+    <form method="post" action="add">
+
+
+        <label for="headdirection">Head Direction:</label>
+        <input for="headdirection" name="headdirection" /><br />
+
+        <label for="sex">Sex:</label>
+        <input for="sex" name="sex"/><br />
+
+        <label for="northsouth">North South:</label>
+        <input for="northsouth" name="northsouth" /><br />
+
+        <label for="eastwest">East West:</label>
+        <input for="eastwest" name="eastwest" /><br />
+
+        <label for="adultsubadult">Adult Sub Adult:</label>
+        <input for="adultsubadult" name="adultsubadult"/><br />
+
+        <label for="facebundles">Face Bundles:</label>
+        <input for="facebundles" name="facebundles"/><br />
+
+        <label for="preservation">Preservation:</label>
+        <input for="preservation" name="preservation"/><br />
+
+        <label for="fieldbookpage">Field Book Page:</label>
+        <input for="fieldbookpage" name="fieldbookpage"/><br />
+
+        <label for="goods">Goods:</label>
+        <input for="goods" name="goods"/><br />
+
+        <label for="text">Text:</label>
+        <input for="text" name="text"/><br />
+
+        <label for="haircolor">Hair Color:</label>
+        <input for="haircolor" name="haircolor"/><br />
+
+        <label for="samplescollected">Samples Collected:</label>
+        <input for="samplescollected" name="samplescollected"/><br />
+
+        <label for="burialid">Burial Id:</label>
+        <input for="burialid" name="burialid"/><br />
+
+        <label for="length">Length:</label>
+        <input for="length" name="length"/><br />
+
+        <label for="burialnumber">Burial Number:</label>
+        <input for="burialnumber" name="burialnumber"/><br />
+
+        <label for="dataexpertinitials">Data Expert Initials:</label>
+        <input for="dataexpertinitials" name="dataexpertinitials"/><br />
+
+        <label for="ageatdeath">Age at Death:</label>
+        <input for="ageatdeath" name="ageatdeath"/><br />
+
+        <label for="excavationrecorder">Excavation Recorder:</label>
+        <input for="excavationrecorder" name="excavationrecorder"/><br />
+
+        <label for="photos">Photos:</label>
+        <input for="photos" name="photos"/><br />
+
+        <label for="hair">Hair:</label>
+        <input for="hair" name="hair"/><br />
+
+        <label for="burialmaterials">Burial Materials:</label>
+        <input for="burialmaterials" name="burialmaterials"/><br />
+
+        <label for="dateofexcavation">Date of Excavation:</label>
+        <input for="dateofexcavation" name="dateofexcavation"/><br />
+
+        <label for="fieldbookexcavationyear">Field Book Excavation Year:</label>
+        <input for="fieldbookexcavationyear" name="fieldbookexcavationyear"/><br />
+
+        <label for="clusternumber">Cluster Number:</label>
+        <input for="clusternumber" name="clusternumber"/><br />
+
+        <label for="shaftnumber">Shaft Number:</label>
+        <input for="shaftnumber" name="shaftnumber"/><br />
+
+        <label for="square_north_south">Square North South:</label>
+        <input for="square_north_south" name="square_north_south" /><br />
+
+        <label for="body_depth">Depth:</label>
+        <input for="body_depth" name="body_depth"/><br />
+
+        <label for="south_to_head">South to Head:</label>
+        <input for="south_to_head" name="south_to_head"/><br />
+
+        <label for="square_east_west">Square East West:</label>
+        <input for="square_east_west" name="square_east_west"/><br />
+
+        <label for="west_to_head">West to Head:</label>
+        <input for="west_to_head" name="west_to_head"/><br />
+
+        <label for="west_to_feet">West to Feet:</label>
+        <input for="west_to_feet" name="west_to_feet"/><br />
+
+        <label for="south_to_feet">South to Feet:</label>
+        <input for="south_to_feet" name="south_to_feet"/><br />
+
+        <label for="wrapping">Wrapping:</label>
+        <select for="wrapping" name="wrapping">
+            <option value="B">Full or Nearly Full Wrapping</option>
+            <option value="H">Partial Wrapping</option>
+            <option value="W">Bones and/or little Wrapping</option>
+        </select>
+
+        <label for="area">Area:</label>
+        <select for="area" name="area">
+            <option value="NE">NE</option>
+            <option value="NNW">NNW</option>
+            <option value="NW">NW</option>
+            <option value="SE">SE</option>
+            <option value="SW">SW</option>
+        </select>
+
+        <button type="Submit" asp-action="add">Submit</button>
+    </form>
+</div>
+</div>
+

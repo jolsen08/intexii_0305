@@ -60,16 +60,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Components/Types/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUeXBlc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Home/AccountManager.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY2NvdW50TWFuYWdlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Home/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Home/AllBurialRecords.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbGxCdXJpYWxSZWNvcmRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Home/BurialRecord.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCdXJpYWxSZWNvcmQuY3NodG1s
+[C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Home/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Home/HeadDirectionPred.cshtml]
@@ -80,8 +88,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Home/Notes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3Rlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Home/RecordDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWNvcmREZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Home/RecordManager.cshtml]
@@ -104,8 +120,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Shared/_TopMenuPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ub3BNZW51UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/UserRoleManagement/AddUserToRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclJvbGVNYW5hZ2VtZW50XEFkZFVzZXJUb1JvbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/UserRoleManagement/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclJvbGVNYW5hZ2VtZW50XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/UserRoleManagement/DisplayRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclJvbGVNYW5hZ2VtZW50XERpc3BsYXlSb2xlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/UserRoleManagement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclJvbGVNYW5hZ2VtZW50XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/_ViewImports.cshtml]
