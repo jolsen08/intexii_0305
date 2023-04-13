@@ -11,6 +11,10 @@ namespace IntexII_0305.Controllers
             repo = temp;
         }
 
+        public IActionResult Tables(){
+            return View();
+        }
+
 
         [HttpPost]
         public IActionResult Add(Burialmain model)

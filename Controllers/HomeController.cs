@@ -223,13 +223,15 @@ namespace IntexII_0305.Controllers
 
         //CRUD Functionality
 
+        [Authorize(Roles="SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Add()
         {
-            ViewBag.burialArea = repo.burialmain.ToList();
+            ViewBag.burialmain = repo.burialmain.ToList();
             return View();
         }
 
+        [Authorize(Roles="SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Add(Burialmain model)
         {
@@ -242,17 +244,19 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Add");
         }
 
+        [Authorize(Roles="SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Edit(long id)
         {
-           /* ViewBag.burialArea = repo.burialmain.ToList();
-            var record = repo.burialmain.Single(x => x.Id == id);*/
+            ViewBag.burialmain = repo.burialmain.ToList();
+            var record = repo.burialmain.Single(x => x.Id == id);
 
-            Burialmain burialmain = repo.burialmain.FirstOrDefault(x => x.Id == id);
+            //Burialmain burialmain = repo.burialmain.FirstOrDefault(x => x.Id == id);
 
-            return View("Edit", burialmain);
+            return View("Add", record);
         }
 
+        [Authorize(Roles="SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Edit(Burialmain model)
         {
@@ -262,20 +266,24 @@ namespace IntexII_0305.Controllers
                 repo.SaveChanges();
                 return RedirectToAction("BurialSummary");
             } // if invalid input
-            else return RedirectToAction("Edit", model.Id);
+            else { return RedirectToAction("Edit", model.Id); }
         }
 
+        [Authorize(Roles="SuperAdmin, TA")]
         [HttpGet]
-        public IActionResult Delete(int id)
+        public IActionResult Delete(long id)
         {
             var record = repo.burialmain.Single(x => x.Id == id);
+
             return View("Delete", record);
         }
         
+        [Authorize(Roles="SuperAdmin, TA")]
         [HttpPost]
-        public IActionResult Delete(Burialmain model)
+        public IActionResult Delete(Burialmain model )
         {
-            repo.burialmain.Remove(model);
+
+            repo.Remove(model);
             repo.SaveChanges();
             return RedirectToAction("BurialSummary");
         }

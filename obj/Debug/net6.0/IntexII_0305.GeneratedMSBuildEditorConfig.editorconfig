@@ -80,10 +80,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Home/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Home/HeadDirectionPred.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIZWFkRGlyZWN0aW9uUHJlZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -106,6 +102,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Home/RecordManager.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWNvcmRNYW5hZ2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Home/Tables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUYWJsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/BYU Rental/Documents/IntexII/IntexII_0305/Views/Home/UnsupervisedFindings.cshtml]
