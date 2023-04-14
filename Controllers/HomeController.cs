@@ -458,12 +458,14 @@ namespace IntexII_0305.Controllers
 
         //Database Add Functionality
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Analysis()
         {
             return View();
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Analysis(Analysis model)
         {
@@ -482,12 +484,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Artifactfagelgamousregister()
         {
             return View();
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Artifactfagelgamousregister(Artifactfagelgamousregister model)
         {
@@ -500,12 +504,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Artifactkomaushimregister()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Artifactkomaushimregister(Artifactkomaushimregister model)
         {
@@ -524,12 +530,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Biological()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Biological(Biological model)
         {
@@ -548,12 +556,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Bodyanalysischart()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Bodyanalysischart(Bodyanalysischart model)
         {
@@ -566,12 +576,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Book()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Book(Book model)
         {
@@ -584,12 +596,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult C14()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult C14(C14 model)
         {
@@ -602,12 +616,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Color()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Color(Color model)
         {
@@ -620,12 +636,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Cranium()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Cranium(Cranium model)
         {
@@ -638,12 +656,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Decoration()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Decoration(Decoration model)
         {
@@ -656,12 +676,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Dimension()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Dimension(Dimension model)
         {
@@ -674,12 +696,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Newsarticle()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Newsarticle(Newsarticle model)
         {
@@ -692,12 +716,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Photodatum()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Photodatum(Photodatum model)
         {
@@ -710,12 +736,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Photoform()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Photoform(Photoform model)
         {
@@ -734,12 +762,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Structure()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Structure(Structure model)
         {
@@ -752,12 +782,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Teammember()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Teammember(Teammember model)
         {
@@ -769,13 +801,15 @@ namespace IntexII_0305.Controllers
             } // if invalid input
             else return RedirectToAction("Tables");
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Textile()
         {
             return View();
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Textile(Textile model)
         {
@@ -800,12 +834,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Textilefunction()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Textilefunction(Textilefunction model)
         {
@@ -818,12 +854,14 @@ namespace IntexII_0305.Controllers
             else return RedirectToAction("Tables");
         }
 
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpGet]
         public IActionResult Yarnmanipulation()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SuperAdmin, TA")]
         [HttpPost]
         public IActionResult Yarnmanipulation(Yarnmanipulation model)
         {
