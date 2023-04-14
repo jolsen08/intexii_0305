@@ -1,0 +1,49 @@
+@{
+    ViewData["Title"] = "Add Photoform Record";
+}
+
+@model Photoform
+
+<div>
+    <h4> Add a new Photoform record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="get" asp-action="Tables">
+           
+            <!-- <label asp-for="Id">Id:</label>
+            <input type="number" asp-for="Id"/><br /> -->
+
+            <label asp-for="Area">Area:</label>
+            <input asp-for="Area"/><br />
+
+            <label asp-for="Squarenorthsouth">Square north south:</label>
+            <input asp-for="Squarenorthsouth"/><br />
+
+            <label asp-for="Tableassociation">Table association:</label>
+            <input asp-for="Tableassociation"/><br />
+
+            <label asp-for="Filename">File name:</label>
+            <input asp-for="Filename"/><br />
+
+            <label asp-for="Photographer">Photographer:</label>
+            <input asp-for="Photographer"/><br />
+
+            <label asp-for="Burialnumber">Burial number:</label>
+            <input asp-for="Burialnumber"/><br />
+
+            <label asp-for="Squareeastwest">Square east west:</label>
+            <input asp-for="Squareeastwest"/><br />
+
+            <label asp-for="Eastwest">East west:</label>
+            <input asp-for="Eastwest"/><br />
+
+            <label asp-for="Northsouth">North south:</label>
+            <input asp-for="Northsouth"/><br />
+
+            <label asp-for="Photodate">Photo date:</label>
+            <input type="datetime-local" asp-for="Photodate"/><br />
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>
+

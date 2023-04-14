@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Add Book";
+}
+
+@model Book
+
+<div>
+    <h4> Add new Book Record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="get" asp-action="Tables">
+
+            <!-- <label asp-for="Id">Id:</label>
+            <input type="number" asp-for="Id"/><br /> -->
+
+            <label asp-for="Description">Description:</label>
+            <input type="string" asp-for="Description"/><br />
+
+            <label asp-for="Title">Title:</label>
+            <input type="string" asp-for="Title"/><br />
+
+            <label asp-for="Author">Author:</label>
+            <input type="string" asp-for="Author"/><br />
+
+            <label asp-for="Link">Link:</label>
+            <input type="number" asp-for="Link"/><br />
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>

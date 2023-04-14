@@ -1,0 +1,13 @@
+.env
+*.dll
+*.pdb
+*.onnx
+/bin 
+
+.env
+*.onnx
+*.xcframework
+*.framework
+/obj
+
+/obj/Release/net6.0/PubTmp/Out/runtimes/ios/native/onnxruntime.xcframework/ios-arm64_x86_64-simulator/onnxruntime.framework/onnxruntime

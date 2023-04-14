@@ -1,0 +1,44 @@
+@using IntexII_0305.Infrastructure;
+@using IntexII_0305.Models
+@model Burialmain
+
+<div class="card card-outline-primary m-1 p-1" style="display:flex; flex-direction: row; width: fit-content">
+    <div>
+        <div class="bg-faded p-1">
+            <h4>
+                Mummy ID: @Model.Id
+                <span class="badge badge-pill badge-primary " >
+                    <small>@Model.Sex</small>
+                </span>
+            </h4>
+        </div>
+
+        <ul class="card-text p-1" style="list-style: none">
+            <li><b>Sex: </b>@Model.Sex</li>
+            <li><b>Age at Death: </b>@Model.Ageatdeath</li>
+            <li><b>Area: </b>@Model.Area</li>
+            <li><b>Date of Excavation: </b>@Model.Dateofexcavation</li>
+            <li><b>Depth: </b>@Model.Depth</li>
+        </ul>
+    </div>
+
+    <form method="post" asp-action="RecordDetails">
+
+        <input type="hidden" value="@Model.Id" name="id"/>
+        @* <input type="hidden" value="@ViewBag.Filters" name="filters" /> *@
+        <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+
+        <span class="card-text">
+            <button type="Submit" class="btn btn-success float-lg-right">View More Details</button>
+        </span>
+    </form>
+
+    <form method="get" asp-action="Edit">
+        <input type="hidden" value="@Model.Id" name="id" />
+        <button class="btn btn-secondary" type="Submit">Edit</button>
+    </form>
+    <form method="get" asp-action="Delete">
+        <input type="hidden" value="@Model.Id" name="id" />
+        <button class="btn btn-danger" type="Submit">Delete</button>
+    </form>
+</div>

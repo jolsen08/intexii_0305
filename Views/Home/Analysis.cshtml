@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Add Analysis Record";
+}
+
+@model Analysis
+
+<div>
+    <h4> Add a new Analysis record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="get" asp-action="Tables">
+
+            <!-- <label asp-for="Id">Id:</label>
+            <input type="number" asp-for="Id"/><br /> -->
+
+            <label asp-for="Analysistype">Analysis Type:</label>
+            <input type="number" asp-for="Analysistype"/><br />
+
+            <label asp-for="Doneby">Done By:</label>
+            <input asp-for="Doneby"/><br />
+            
+            <!-- <label asp-for="Analysisid">Analysis Id:</label>
+            <input type="number" asp-for="Analysisid"/><br /> -->
+
+            <label asp-for="Date">Date:</label>
+            <input type="datetime-local" name="Date"/>
+
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>
+

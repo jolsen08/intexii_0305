@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Add Yarn Manipulation  Record";
+}
+
+@model Yarnmanipulation
+
+<div>
+    <h4> Add a new Yarn Manipulation record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="get" asp-action="Tables">
+           
+            <!-- <label asp-for="Id">Id:</label>
+            <input type="number" asp-for="Id"/><br /> -->
+
+            <label asp-for="Thickness">Thickness:</label>
+            <input asp-for="Thickness"/><br />
+
+            <label asp-for="Angle">Angle:</label>
+            <input asp-for="Angle"/><br />
+
+            <label asp-for="Manipulation">Manipulation:</label>
+            <input asp-for="Manipulation"/><br />
+
+            <label asp-for="Material">Material:</label>
+            <input asp-for="Material"/><br />
+
+            <label asp-for="Count">Count:</label>
+            <input asp-for="Count"/><br />
+
+            <label asp-for="Component">Component:</label>
+            <input asp-for="Component"/><br />
+
+            <label asp-for="Ply">Ply:</label>
+            <input asp-for="Ply"/><br />
+
+  @*          <label asp-for="Yarnmanipulationid">Yarn manipulation id:</label>
+            <input type="number" asp-for="Yarnmanipulationid"/><br />*@
+            
+            <label asp-for="Direction">Direction:</label>
+            <input asp-for="Direction"/><br />
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>
+

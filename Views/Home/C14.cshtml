@@ -1,0 +1,63 @@
+@{
+    ViewData["Title"] = "Add C14";
+}
+
+@model C14
+
+<div>
+    <h4> Add new C14 Record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="get" asp-action="Tables">
+
+            <!-- <label asp-for="Id">Id:</label>
+            <input type="number" asp-for="Id"/><br /> -->
+
+            <label asp-for="Description">Description:</label>
+            <input type="string" asp-for="Description"/><br />
+
+            <label asp-for="Category">Category:</label>
+            <input type="string" asp-for="Category"/><br />
+
+            <label asp-for="Size">Size:</label>
+            <input type="number" asp-for="Size"/><br />
+
+            <label asp-for="Agebp">Agebp:</label>
+            <input type="number" asp-for="Agebp"/><br />
+
+            <label asp-for="Calibratedspan">Calibratedspan:</label>
+            <input type="number" asp-for="Calibratedspan"/><br />
+
+            <label asp-for="Tubenumber">Tubenumber:</label>
+            <input type="number" asp-for="Tubenumber"/><br />
+
+            <label asp-for="Calibrateddatemin">Calibrateddatemin:</label>
+            <input type="number" asp-for="Calibrateddatemin"/><br />
+
+            <label asp-for="Calibrateddateavg">Calibrateddateavg:</label>
+            <input type="number" asp-for="Calibrateddateavg"/><br />
+
+            <label asp-for="Foci">Foci:</label>
+            <input type="string" asp-for="Foci"/><br />
+
+            <label asp-for="Rack">Rack:</label>
+            <input type="number" asp-for="Rack"/><br />
+
+            <label asp-for="Calendardate">Calendardate:</label>
+            <input type="number" asp-for="Calendardate"/><br />
+
+            <label asp-for="Calibrateddatemax">Calibrateddatemax:</label>
+            <input type="number" asp-for="Calibrateddatemax"/><br />
+
+            <label asp-for="C14lab">C14lab:</label>
+            <input type="string" asp-for="C14lab"/><br />
+
+            <label asp-for="Questions">Questions:</label>
+            <input type="string" asp-for="Questions"/><br />
+
+            <label asp-for="Location">Location:</label>
+            <input type="string" asp-for="Location"/><br />
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>

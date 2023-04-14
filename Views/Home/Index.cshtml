@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#002E5D"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "type": "opt-out",
+  "content": {
+    "href": "Privacy.cshtml"
+  }
+});
+</script>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Fag el-Gamous</h1>
+    <h4> This is a page dedicated to the BYU mummies</h4>
+    <div style="display: flex; justify-content: center;">
+        <img height="400" width="600" src="~/img/title_mummies.jpeg" alt="">
+    </div>
+
+    <h5>We believe in the power of history and stories. These mummies of Egypt provide precious insight into the Ancient World.</h5>
+    <h5>Let's look at the past to build a better future.</h5>
+</div>
+
+<div>
+
+</div>

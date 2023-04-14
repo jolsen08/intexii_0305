@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Add Artifact Fag el-Gamous Register Record";
+}
+
+@model Artifactfagelgamousregister
+
+<div>
+    <h4> Add new Artifact Fag el-Gamous Register Record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="get" asp-for="Tables">
+
+     @*       <label asp-for="Id">Id:</label>
+            <input type="number" asp-for="Id"/><br />*@
+
+            <label asp-for="Registernum">Register num:</label>
+            <input asp-for="Registernum"/><br />
+
+            <label asp-for="Photographed">Photographed:</label>
+            <input asp-for="Photographed"/><br />
+
+            <label asp-for="Notes">Notes:</label>
+            <input asp-for="Notes"/><br />
+
+            <label asp-for="Coordinateset">Coordinate set:</label>
+            <input asp-for="Coordinateset"/><br />
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>
+

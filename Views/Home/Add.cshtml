@@ -1,0 +1,150 @@
+@{
+    ViewData["Title"] = "Add Record";
+}
+
+@model Burialmain
+
+<div>
+    <h4> Add a new record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="post">
+
+            <label asp-for="Headdirection">Head Direction:</label>
+            <input asp-for="Headdirection"/><br />
+
+            <label asp-for="Sex">Sex:</label>
+            <select asp-for="Sex">
+                <option value="F">Female</option>
+                <option value="M">Male</option>
+                <option value="U">Unknown</option>
+            </select><br />
+
+            <label asp-for="Northsouth">North South:</label>
+            <input asp-for="Northsouth"/><br />
+
+            <label asp-for="Eastwest">East West:</label>
+            <input asp-for="Eastwest"/><br />
+
+            <label asp-for="Adultsubadult">Adult Sub Adult:</label>
+            <select asp-for="Adultsubadult">
+                <option value="A">Adult</option>
+                <option value="C">Any non adult</option>
+            </select><br />
+
+            <label asp-for="Facebundles">Face Bundles:</label>
+            <input asp-for="Facebundles"><br />
+
+            <label asp-for="Preservation">Preservation:</label>
+            <input asp-for="Preservation"/><br />
+
+            <label asp-for="Fieldbookpage">Field Book Page:</label>
+            <input asp-for="Fieldbookpage"/><br />
+
+            <label asp-for="Goods">Goods:</label>
+            <input asp-for="Goods"/><br />
+
+            <label asp-for="Text">Text:</label>
+            <input asp-for="Text"/><br />
+
+            <label asp-for="Haircolor">Hair Color:</label>
+            <select asp-for="Haircolor">
+                <option value="B">Brown/Dark Brown/Lt Brown</option>
+                <option value="K">Black</option>
+                <option value="A">Brown-Red</option>
+                <option value="R">Red/Red-Bl</option>
+                <option value="D">Blond</option>
+                <option value="U">Unknown</option>
+            </select><br />
+
+            <label asp-for="Samplescollected">Samples Collected:</label>
+            <input asp-for="Samplescollected"/><br />
+
+            <label asp-for="Burialid">Burial Id:</label>
+            <input type="number" asp-for="Burialid"/><br />
+
+            <label asp-for="Length">Length:</label>
+            <input asp-for="Length"/><br />
+
+            <label asp-for="Burialnumber">Burial Number:</label>
+            <input asp-for="Burialnumber"/><br />
+
+            <label asp-for="Dataexpertinitials">Data Expert Initials:</label>
+            <input asp-for="Dataexpertinitials"/><br />
+
+            <label asp-for="Ageatdeath">Age at Death:</label>
+            <select asp-for="Ageatdeath">
+                <option value="A">Adult - years 15+</option>
+                <option value="C">Child - years 3-15</option>
+                <option value="I">Infant - years 1-3</option>
+                <option value="N">Newborn - years 0-1</option>
+                <option value="U">Unknown</option>
+            </select><br />
+
+            <label asp-for="Excavationrecorder">Excavation Recorder:</label>
+            <input asp-for="Excavationrecorder"/><br />
+
+            <label asp-for="Photos">Photos:</label>
+            <input asp-for="Photos"/><br />
+
+            <label asp-for="Hair">Hair:</label>
+            <input asp-for="Hair"/><br />
+
+            <label asp-for="Burialmaterials">Burial Materials:</label>
+            <input asp-for="Burialmaterials"/><br />
+
+            <label asp-for="Dateofexcavation">Date of Excavation:</label>
+            <input type="datetime-local" asp-for="Dateofexcavation"/><br />
+
+            <label asp-for="Fieldbookexcavationyear">Field Book Excavation Year:</label>
+            <input asp-for="Fieldbookexcavationyear"/><br />
+
+            <label asp-for="Clusternumber">Cluster Number:</label>
+            <input asp-for="Clusternumber"/><br />
+
+            <label asp-for="Shaftnumber">Shaft Number:</label>
+            <input asp-for="Shaftnumber"/><br />
+
+            <label asp-for="Squarenorthsouth">Square North South:</label>
+            <input asp-for="Squarenorthsouth"/><br />
+
+            <label asp-for="Depth">Depth:</label>
+            <input asp-for="Depth"/><br />
+
+            <label asp-for="Southtohead">South to Head:</label>
+            <input asp-for="Southtohead"/><br />
+
+            <label asp-for="Squareeastwest">Square East West:</label>
+            <input asp-for="Squareeastwest"/><br />
+
+            <label asp-for="Westtohead">West to Head:</label>
+            <input asp-for="Westtohead"/><br />
+
+            <label asp-for="Westtofeet">West to Feet:</label>
+            <input asp-for="Westtofeet"/><br />
+
+            <label asp-for="Southtofeet">South to Feet:</label>
+            <input asp-for="Southtofeet"/><br />
+
+            <label asp-for="Wrapping">Wrapping:</label>
+            <select asp-for="Wrapping">
+                <option value="W">Full or Nearly Full Wrapping</option>
+                <option value="H">Partial Wrapping</option>
+                <option value="B">Bones and/or little Wrapping</option>
+            </select>
+
+            <label asp-for="Area">Area:</label>
+            <select asp-for="Area">
+                <option value="NE">NE</option>
+                <option value="NNW">NNW</option>
+                <option value="NW">NW</option>
+                <option value="SE">SE</option>
+                <option value="SW">SW</option>
+            </select>
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>
+<br />
+<br />
+<br />

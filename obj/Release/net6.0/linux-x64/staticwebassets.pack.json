@@ -1,0 +1,353 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\obj\\Release\\net6.0\\linux-x64\\scopedcss\\projectbundle\\IntexII_0305.bundle.scp.css",
+      "PackagePath": "staticwebassets\\IntexII_0305.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\0bar.jpg",
+      "PackagePath": "staticwebassets\\img\\0bar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\1bar.jpg",
+      "PackagePath": "staticwebassets\\img\\1bar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\2bar.jpg",
+      "PackagePath": "staticwebassets\\img\\2bar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\3bar.jpg",
+      "PackagePath": "staticwebassets\\img\\3bar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\4bar.jpg",
+      "PackagePath": "staticwebassets\\img\\4bar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\5bar.jpg",
+      "PackagePath": "staticwebassets\\img\\5bar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\egyptian-black.jpg",
+      "PackagePath": "staticwebassets\\img\\egyptian-black.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\egyptian-blonde.jpg",
+      "PackagePath": "staticwebassets\\img\\egyptian-blonde.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\egyptian-brownred.jpg",
+      "PackagePath": "staticwebassets\\img\\egyptian-brownred.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\egyptian-female.jpg",
+      "PackagePath": "staticwebassets\\img\\egyptian-female.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\egyptian-male.jpg",
+      "PackagePath": "staticwebassets\\img\\egyptian-male.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\egyptian-red.jpg",
+      "PackagePath": "staticwebassets\\img\\egyptian-red.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\egyptianhead-east.jpg",
+      "PackagePath": "staticwebassets\\img\\egyptianhead-east.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\egyptianhead-west.jpeg",
+      "PackagePath": "staticwebassets\\img\\egyptianhead-west.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\fully-wrapped.jpg",
+      "PackagePath": "staticwebassets\\img\\fully-wrapped.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\half-wrapped.jpg",
+      "PackagePath": "staticwebassets\\img\\half-wrapped.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\newplot.jpg",
+      "PackagePath": "staticwebassets\\img\\newplot.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\newplotJ.jpg",
+      "PackagePath": "staticwebassets\\img\\newplotJ.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\no-wrap.jpg",
+      "PackagePath": "staticwebassets\\img\\no-wrap.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\img\\title_mummies.jpeg",
+      "PackagePath": "staticwebassets\\img\\title_mummies.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\model.onnx",
+      "PackagePath": "staticwebassets\\model.onnx"
+    },
+    {
+      "Id": "C:\\Users\\chwan\\Documents\\IntexII\\wwwroot\\model_sex.onnx",
+      "PackagePath": "staticwebassets\\model_sex.onnx"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\linux-x64\\staticwebassets\\msbuild.IntexII_0305.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\linux-x64\\staticwebassets\\msbuild.build.IntexII_0305.props",
+      "PackagePath": "build\\IntexII_0305.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\linux-x64\\staticwebassets\\msbuild.buildMultiTargeting.IntexII_0305.props",
+      "PackagePath": "buildMultiTargeting\\IntexII_0305.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\linux-x64\\staticwebassets\\msbuild.buildTransitive.IntexII_0305.props",
+      "PackagePath": "buildTransitive\\IntexII_0305.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

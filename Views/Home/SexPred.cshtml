@@ -1,0 +1,99 @@
+@{
+    ViewData["Title"] = "Sex Predictor";
+}
+
+@model string
+
+<div class="text-center">
+    <h1 class="display-4">Sex Predictor</h1>
+    <p>Predicting Mummies' Sex</p>
+</div>
+
+<div style="display: grid; grid-template-columns: auto auto">
+    <form method="post" action="SexPred">
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="depth">Depth:</label>
+            <input type="number" step="0.01" for="depth" name="depth" /><br />
+        </div>
+
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="length">Length:</label>
+            <input type="number" step="0.01" for="length" name="length"/><br />
+        </div>
+
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="femur_head_diameter">Femur Head Diameter:</label>
+            <input type="number" step="0.01" for="femur_head_diameter" name="femur_head_diameter"/><br />
+        </div>
+
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="femur_length">Femur Length:</label>
+            <input type="number" step="0.01" for="femur_length" name="femur_length" /><br />
+        </div>
+           
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="supraorbital_ridges">Supraorbital Ridges:</label>
+            <select for="supraorbital_ridges" name="supraorbital_ridges">
+                <option value="heavy">Heavy</option>
+                <option value="light">Light</option>
+            </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="gonion">Gonion:</label>
+            <select for="gonion" name="gonion">
+                <option value="flat">Flat</option>
+                <option value="pointed">Pointed</option>
+                <option value="medium">Medium</option>
+            </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="zygomatic_crest">Zygomatic Crest:</label>
+            <select for="zygomatic_crest" name="zygomatic_crest">
+                <option value="longer">Longer</option>
+                <option value="shorter">Shorter</option>
+            </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="sciatic_notch">Sciatic Notch:</label>
+            <select for="sciatic_notch" name="sciatic_notch">
+                <option value="wide">Wide</option>
+                <option value="narrow">Narrow</option>
+            </select>
+        </div>
+
+
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label>Pubic Bone</label>
+            <select>
+                <option value="wide">Wide</option>
+                <option value="narrow">Narrow</option>
+            </select>
+        </div>
+
+        <button type="Submit" class="btn submit-buttons" style="color: white; background-color: #002E5D">Submit</button>
+    </form>
+
+    <div>
+        <h4>Predicted Sex:</h4>
+        <div>
+            @if (Model == "M")
+            {
+                <h5>Male</h5>
+                <img src="/img/egyptian-male.jpg" alt="Male" style="height: 270px;">
+            }
+            else if (Model == "F")
+            {
+                <h5>Female</h5>
+                <img src="/img/egyptian-female.jpeg" alt="Female" style="height: 270px;">
+            }
+            else
+            {
+                <p></p>
+            }
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Add Structure Record";
+}
+
+@model Structure
+
+<div>
+    <h4> Add a new Structure record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="get" asp-action="Tables">
+
+            <!-- <label asp-for="Id">Id:</label>
+            <input type="number" asp-for="Id"/><br /> -->
+
+            <label asp-for="Value">Value:</label>
+            <input asp-for="Value"/><br />
+
+            <label asp-for="Structureid">Structure id:</label>
+            <input type="number" asp-for="Structureid"/><br />
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>
+

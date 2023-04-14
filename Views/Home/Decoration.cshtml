@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Add Decoration Record";
+}
+
+@model Decoration
+
+<div>
+    <h4> Add new Decoration Record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="get" asp-action="Tables">
+
+            <!-- <label asp-for="Id">Id:</label>
+            <input type="number" asp-for="Id"/><br /> -->
+
+            <label asp-for="Decorationid">Decoration Id:</label>
+            <input type="number" asp-for="Decorationid"/><br />
+
+            <label asp-for="Value">Value:</label>
+            <input asp-for="Value"/><br />
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿@using IntexII_0305.Models.ViewModels;
+@using IntexII_0305.Models;
+@model RecordsViewModel
+
+<h1>Fag el-Gamous</h1>
+<div class="row m-1 p-1">
+    <div id="categories" class="col-3">
+        <vc:types></vc:types>
+    </div>
+    <div class="col-9">
+    @*This for loop will iterate through each object in the Books table in our model*@
+    @foreach (Burialmain b in Model.burialmain)
+    {
+        //Simply referencing the BookSummary page for the partial view. All we need to pass in is the b object
+            <partial name="BurialSummary" model="b" />
+    }
+    </div>
+</div>
+
+<div page-blah="@Model.PageInfo" page-filters="@Model.Filters" page-action="BurialSummary" page-classes-enabled="true" page-class="btn"
+     page-class-normal="btn-outline-dark" page-class-selected="btn-primary" class="btn-group pull-right m-1">
+</div>
+<br />
+<br />
+<br />

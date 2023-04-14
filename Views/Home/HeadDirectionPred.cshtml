@@ -1,0 +1,93 @@
+@{
+    ViewData["Title"] = "Head Direction Predictor";
+}
+
+@model string
+
+<div class="text-center">
+    <h1 class="display-4">Head Direction Predictor</h1>
+    <p>Predicting Mummies' Head Direction</p>
+</div>
+
+<div style="display: grid; grid-template-columns: auto auto">
+    <form method="post" action="HeadDirectionPred">
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="square_north_south">Square North South:</label>
+            <input type="number" step="0.01" for="square_north_south" name="square_north_south" /><br />
+        </div>
+
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="body_depth">Depth:</label>
+            <input type="number" step="0.01" for="body_depth" name="body_depth"/><br />
+        </div>
+
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="south_to_head">South to Head:</label>
+            <input type="number" step="0.01" for="south_to_head" name="south_to_head"/><br />
+        </div>
+
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="square_east_west">Square East West:</label>
+            <input type="number" step="0.01" for="square_east_west" name="square_east_west"/><br />
+        </div>
+           
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="west_to_head">West to Head:</label>
+            <input type="number" step="0.01" for="west_to_head" name="west_to_head"/><br />
+        </div>
+
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="west_to_feet">West to Feet:</label>
+            <input type="number" step="0.01" for="west_to_feet" name="west_to_feet"/><br />
+        </div>
+
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="south_to_feet">South to Feet:</label>
+            <input type="number" step="0.01" for="south_to_feet" name="south_to_feet"/><br />
+        </div>
+
+        <div style="display: grid; grid-template-columns: 160px 200px">
+            <label for="wrapping">Wrapping:</label>
+            <select for="wrapping" name="wrapping">
+                <option value="W">Full or Nearly Full Wrapping</option>
+                <option value="H">Partial Wrapping</option>
+                <option value="B">Bones and/or little Wrapping</option>
+            </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 160px 80px">
+            <label for="area">Area:</label>
+            <select for="area" name="area">
+                <option value="NE">NE</option>
+                <option value="NNW">NNW</option>
+                <option value="NW">NW</option>
+                <option value="SE">SE</option>
+                <option value="SW">SW</option>
+            </select>
+        </div>
+        <br />
+
+        <button type="Submit" class="btn submit-buttons" style="color: white; background-color: #002E5D">Submit</button>
+    </form>
+
+    <div>
+        <h4>Predicted Direction:</h4>
+        <div>
+            @if (Model == "W")
+            {
+                <h5>West</h5>
+                <img src="/img/egyptianhead-west.jpeg" alt="West" style="height: 270px;">
+            }
+            else if (Model == "E")
+            {
+                <h5>East</h5>
+                <img src="/img/egyptianhead-east.jpg" alt="East" style="height: 270px;">
+            }
+            else
+            {
+                <p></p>
+            }
+        </div>
+    </div>
+
+</div>
