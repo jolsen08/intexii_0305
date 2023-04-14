@@ -47,33 +47,192 @@ namespace IntexII_0305.Controllers
             return View();
         }
 
-      
-        public IActionResult BurialSummary(string burialArea, int pageNum = 1)
+        // public IActionResult AllBurialRecords(RecordsViewModel x) 
+        // {
+        //     ViewBag.Filters = x.Filters;
+        //     return View();
+        // }
+
+        public IActionResult BurialSummary(
+            //string burialArea,
+            long? BurialRecordId,
+            string? Sexes,
+            string? AgesAtDeath,
+            string? Depths,
+            string? HeadDirections,
+            string? Wrappings,
+            string? HairColors,
+            //string Areas,
+            int pageNum = 1)
         {
+            int pageSize = 20;
+
+            if (BurialRecordId == 0) BurialRecordId = null;
+
+            var x = new RecordsViewModel
+            {
+                burialmain = repo.burialmain
+                //.Where(c => c.Area == burialArea || burialArea == null)
+                .Where(c =>
+                    (c.Sex == Sexes || Sexes == null)
+                     && (c.Id == BurialRecordId || BurialRecordId == null)
+                    && (c.Ageatdeath == AgesAtDeath || AgesAtDeath == null)
+                    && (c.Depth == Depths || Depths == null)
+                    && (c.Headdirection == HeadDirections || HeadDirections == null)
+                    && (c.Wrapping == Wrappings || Wrappings == null)
+                    && (c.Haircolor == HairColors || HairColors == null)
+                    //&& (c.Area == Areas || Areas == null)
+                )
+                .OrderBy(t => t.Id)
+                .Skip((pageNum - 1) * pageSize)
+                .Take(pageSize),
+                PageInfo = new PageInfo
+                {
+                    TotalNumBurials =
+                    //(burialArea == null
+                    
+                    ((Sexes == null)
+                     && (BurialRecordId == null)
+                    && (AgesAtDeath == null)
+                    && (Depths == null)
+                    && (HeadDirections == null)
+                    && (Wrappings == null)
+                    && (HairColors == null)
+                    //&& (Areas == null)
+                        ?
+                        repo.burialmain.Count()
+                        : repo.burialmain.Where(c =>
+                            //c.Area == burialArea
+                            (c.Sex == Sexes || Sexes == null)
+                     && (c.Id == BurialRecordId || BurialRecordId == null)
+                    && (c.Ageatdeath == AgesAtDeath || AgesAtDeath == null)
+                    && (c.Depth == Depths || Depths == null)
+                    && (c.Headdirection == HeadDirections || HeadDirections == null)
+                    && (c.Wrapping == Wrappings || Wrappings == null)
+                    && (c.Haircolor == HairColors || HairColors == null)
+                    //&& (c.Area == Areas || Areas == null)
+                            ).Count()),
+                    BurialsPerPage = pageSize,
+                    CurrentPage = pageNum
+                },
+
+                Filters = new FilterTypes
+                {
+                    BurialRecordId = BurialRecordId,
+                    Sexes = Sexes,
+                    AgesAtDeath = AgesAtDeath,
+                    Depths = Depths,
+                    HeadDirections = HeadDirections,
+                    Wrappings = Wrappings,
+                    HairColors = HairColors
+                    //Areas = Areas
+                }
+            };
+
+            if (BurialRecordId != null) HttpContext.Session.SetString("BurialRecordId", BurialRecordId.ToString());
+            else HttpContext.Session.Remove("BurialRecordId");
+            if (Sexes != null) HttpContext.Session.SetString("Sexes", Sexes);
+            else HttpContext.Session.Remove("Sexes");
+            if (AgesAtDeath != null) HttpContext.Session.SetString("AgesAtDeath", AgesAtDeath);
+            else HttpContext.Session.Remove("AgesAtDeath");
+            if (Depths != null) HttpContext.Session.SetString("Depths", Depths);
+            else HttpContext.Session.Remove("Depths");
+            if (HeadDirections != null) HttpContext.Session.SetString("HeadDirections", HeadDirections);
+            else HttpContext.Session.Remove("HeadDirections");
+            if (Wrappings != null) HttpContext.Session.SetString("Wrappings", Wrappings);
+            else HttpContext.Session.Remove("Wrappings");
+            if (HairColors != null) HttpContext.Session.SetString("HairColors", HairColors);
+            else HttpContext.Session.Remove("HairColors");
+            HttpContext.Session.SetString("PageNum", pageNum.ToString());
+
+            return View("AllBurialRecords", x);
+        }
+
+        public IActionResult ExitSummary()
+        {
+            string? Bri= HttpContext.Session.GetString("BurialRecordId");
+            long? BurialRecordId;
+            if (Bri == null) BurialRecordId = null;
+            else BurialRecordId = long.Parse(Bri);
+            string? Sexes = HttpContext.Session.GetString("Sexes");
+            string? AgesAtDeath = HttpContext.Session.GetString("AgesAtDeath");
+            string? Depths = HttpContext.Session.GetString("Depths");
+            string? HeadDirections = HttpContext.Session.GetString("HeadDirections");
+            string? Wrappings = HttpContext.Session.GetString("Wrappings");
+            string? HairColors = HttpContext.Session.GetString("HairColors");
+            string? Pn = HttpContext.Session.GetString("PageNum");
+            int pageNum = int.Parse(Pn);
+
             int pageSize = 20;
 
             var x = new RecordsViewModel
             {
                 burialmain = repo.burialmain
-                .Where(c => c.Area == burialArea || burialArea == null)
+                //.Where(c => c.Area == burialArea || burialArea == null)
+                .Where(c =>
+                    (c.Sex == Sexes || Sexes == null)
+                     && (c.Id == BurialRecordId || BurialRecordId == null)
+                    && (c.Ageatdeath == AgesAtDeath || AgesAtDeath == null)
+                    && (c.Depth == Depths || Depths == null)
+                    && (c.Headdirection == HeadDirections || HeadDirections == null)
+                    && (c.Wrapping == Wrappings || Wrappings == null)
+                    && (c.Haircolor == HairColors || HairColors == null)
+                //&& (c.Area == Areas || Areas == null)
+                )
                 .OrderBy(t => t.Id)
                 .Skip((pageNum - 1) * pageSize)
                 .Take(pageSize),
-
                 PageInfo = new PageInfo
                 {
-                    TotalNumBurials = (burialArea == null ?
+                    TotalNumBurials =
+                    //(burialArea == null
+
+                    ((Sexes == null)
+                     && (BurialRecordId == null)
+                    && (AgesAtDeath == null)
+                    && (Depths == null)
+                    && (HeadDirections == null)
+                    && (Wrappings == null)
+                    && (HairColors == null)
+                    //&& (Areas == null)
+                        ?
                         repo.burialmain.Count()
-                        : repo.burialmain.Where(x => x.Area == burialArea).Count()),
+                        : repo.burialmain.Where(c =>
+                            //c.Area == burialArea
+                            (c.Sex == Sexes || Sexes == null)
+                     && (c.Id == BurialRecordId || BurialRecordId == null)
+                    && (c.Ageatdeath == AgesAtDeath || AgesAtDeath == null)
+                    && (c.Depth == Depths || Depths == null)
+                    && (c.Headdirection == HeadDirections || HeadDirections == null)
+                    && (c.Wrapping == Wrappings || Wrappings == null)
+                    && (c.Haircolor == HairColors || HairColors == null)
+                            //&& (c.Area == Areas || Areas == null)
+                            ).Count()),
                     BurialsPerPage = pageSize,
                     CurrentPage = pageNum
+                },
+
+                Filters = new FilterTypes
+                {
+                    BurialRecordId = BurialRecordId,
+                    Sexes = Sexes,
+                    AgesAtDeath = AgesAtDeath,
+                    Depths = Depths,
+                    HeadDirections = HeadDirections,
+                    Wrappings = Wrappings,
+                    HairColors = HairColors
+                    //Areas = Areas
                 }
             };
-
             return View("AllBurialRecords", x);
         }
 
-        public IActionResult RecordManager()
+            public IActionResult RecordManager()
+        {
+            return View();
+        }
+
+        public IActionResult Tables()
         {
             return View();
         }
@@ -163,7 +322,7 @@ namespace IntexII_0305.Controllers
 
             float[] inputData = { square_north_south, body_depth, south_to_head, square_east_west, west_to_head, west_to_feet, south_to_feet, wrapping_B, wrapping_H, wrapping_W, area_NE, area_NNW, area_NW, area_SE, area_SW };
 
-            var session = new InferenceSession("C:\\Users\\BYU Rental\\Documents\\IntexII\\IntexII_0305\\model.onnx");
+            var session = new InferenceSession("./model.onnx");
 
             var tensor = new DenseTensor<float>(inputData, new int[] { 1, inputData.Length });
 
@@ -188,6 +347,8 @@ namespace IntexII_0305.Controllers
         [HttpGet]
         public IActionResult RecordDetails()
         {
+            // param: FilterTypes filters
+            // ViewBag.Filters = filters;
             return View();
         }
 
@@ -237,6 +398,12 @@ namespace IntexII_0305.Controllers
         {
             if (ModelState.IsValid)
             {
+                //change datetime to UTC
+                if (model.Dateofexcavation != null)
+                {
+                    model.Dateofexcavation = model.Dateofexcavation.Value.ToUniversalTime();
+                }
+
                 repo.Add(model);
                 repo.SaveChanges();
                 return RedirectToAction("BurialSummary");
@@ -286,6 +453,387 @@ namespace IntexII_0305.Controllers
             repo.Remove(model);
             repo.SaveChanges();
             return RedirectToAction("BurialSummary");
+        }
+
+
+        //Database Add Functionality
+
+        [HttpGet]
+        public IActionResult Analysis()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Analysis(Analysis model)
+        {
+            if (ModelState.IsValid)
+            {
+                //change datetime to UTC
+                if (model.Date != null)
+                {
+                    model.Date = model.Date.Value.ToUniversalTime();
+                }
+
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Artifactfagelgamousregister()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Artifactfagelgamousregister(Artifactfagelgamousregister model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Artifactkomaushimregister()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Artifactkomaushimregister(Artifactkomaushimregister model)
+        {
+            if (ModelState.IsValid)
+            {
+                //change datetime to UTC
+                if (model.Entrydate != null)
+                {
+                    model.Entrydate = model.Entrydate.Value.ToUniversalTime();
+                }
+
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Biological()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Biological(Biological model)
+        {
+            if (ModelState.IsValid)
+            {
+                //change datetime to UTC
+                if (model.Date != null)
+                {
+                    model.Date = model.Date.Value.ToUniversalTime();
+                }
+
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Bodyanalysischart()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Bodyanalysischart(Bodyanalysischart model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Book()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Book(Book model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult C14()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult C14(C14 model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Color()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Color(Color model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Cranium()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Cranium(Cranium model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Decoration()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Decoration(Decoration model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Dimension()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Dimension(Dimension model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Newsarticle()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Newsarticle(Newsarticle model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Photodatum()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Photodatum(Photodatum model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Photoform()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Photoform(Photoform model)
+        {
+            if (ModelState.IsValid)
+            {
+                //change datetime to UTC
+                if (model.Photodate != null)
+                {
+                    model.Photodate = model.Photodate.Value.ToUniversalTime();
+                }
+
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Structure()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Structure(Structure model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Teammember()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Teammember(Teammember model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+        
+        [HttpGet]
+        public IActionResult Textile()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Textile(Textile model)
+        {
+            if (ModelState.IsValid)
+            {
+                //change datetime to UTC
+                if (model.Sampledate != null)
+                {
+                    model.Sampledate = model.Sampledate.Value.ToUniversalTime();
+                }
+
+                //change datetime to UTC
+                if (model.Photographeddate != null)
+                {
+                    model.Photographeddate = model.Photographeddate.Value.ToUniversalTime();
+                }
+
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Textilefunction()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Textilefunction(Textilefunction model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
+        }
+
+        [HttpGet]
+        public IActionResult Yarnmanipulation()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Yarnmanipulation(Yarnmanipulation model)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(model);
+                repo.SaveChanges();
+                return RedirectToAction("BurialSummary");
+            } // if invalid input
+            else return RedirectToAction("Tables");
         }
     }
 }

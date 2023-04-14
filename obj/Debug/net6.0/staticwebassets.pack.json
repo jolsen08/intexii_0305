@@ -77,6 +77,14 @@
       "PackagePath": "staticwebassets\\img\\half-wrapped.jpg"
     },
     {
+      "Id": "C:\\Users\\BYU Rental\\Documents\\IntexII\\IntexII_0305\\wwwroot\\img\\newplot.jpg",
+      "PackagePath": "staticwebassets\\img\\newplot.jpg"
+    },
+    {
+      "Id": "C:\\Users\\BYU Rental\\Documents\\IntexII\\IntexII_0305\\wwwroot\\img\\newplotJ.jpg",
+      "PackagePath": "staticwebassets\\img\\newplotJ.jpg"
+    },
+    {
       "Id": "C:\\Users\\BYU Rental\\Documents\\IntexII\\IntexII_0305\\wwwroot\\img\\no-wrap.jpg",
       "PackagePath": "staticwebassets\\img\\no-wrap.jpg"
     },

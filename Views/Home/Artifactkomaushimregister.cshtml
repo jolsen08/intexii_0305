@@ -1,0 +1,61 @@
+@{
+    ViewData["Title"] = "Add Artifact Komaushim Register Record";
+}
+
+@model Artifactkomaushimregister
+
+<div>
+    <h4> Add new Artifact Komaushim Register Record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="post">
+<!-- 
+            <label asp-for="Id">Id:</label>
+            <input type="number" asp-controller="DataBaseController" asp-for="Id"/><br /> -->
+
+            <label asp-for="Provenance">Provenance:</label>
+            <input asp-controller="DataBaseController" asp-for="Provenance" /><br />
+
+            <label asp-for="Position">Position:</label>
+            <input asp-controller="DataBaseController" asp-for="Position" /><br />
+
+            <label asp-for="Qualityphotos">Quality photos:</label>
+            <input asp-controller="DataBaseController" asp-for="Qualityphotos" /><br />
+
+            <label asp-for="Finder">Finder:</label>
+            <input asp-controller="DataBaseController" asp-for="Finder" /><br />
+
+            <label asp-for="Dimensions">Dimensions:</label>
+            <input asp-controller="DataBaseController" asp-for="Dimensions" /><br />
+
+            <label asp-for="Material">Material:</label>
+            <input asp-controller="DataBaseController" asp-for="Material" /><br />
+
+            <label asp-for="Rehousedto">Rehoused to:</label>
+            <input asp-controller="DataBaseController" asp-for="Rehousedto" /><br />
+
+            <label asp-for="Photos">Photos:</label>
+            <input asp-controller="DataBaseController" asp-for="Photos" /><br />
+            
+            <label asp-for="Number">Number:</label>
+            <input asp-controller="DataBaseController" asp-for="Number" /><br />
+
+            <label asp-for="Remarks">Remarks:</label>
+            <input asp-controller="DataBaseController" asp-for="Remarks" /><br />
+
+            <label asp-for="Entrydate">Entry date:</label>
+            <input asp-controller="DataBaseController" type="datetime-local" asp-for="Entrydate" /><br />
+
+            <label asp-for="Currentlocation">Current location:</label>
+            <input asp-controller="DataBaseController" asp-for="Currentlocation" /><br />
+
+            <label asp-for="Excavatornum">Excavator num:</label>
+            <input asp-controller="DataBaseController" asp-for="Excavatornum" /><br />
+
+            <label asp-for="Date">Date:</label>
+            <input asp-controller="DataBaseController" asp-for="Date" /><br />
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>
+

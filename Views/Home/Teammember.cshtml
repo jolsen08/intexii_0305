@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Add Teammember Record";
+}
+
+@model Teammember
+
+<div>
+    <h4> Add a new Teammember record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="post">
+
+            <!-- <label asp-for="Id">Id:</label>
+            <input type="number" asp-for="Id"/><br /> -->
+
+            <label asp-for="Bio">Bio:</label>
+            <input asp-for="Bio"/><br />
+
+            <label asp-for="Membername">Member name:</label>
+            <input asp-for="Membername"/><br />
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>
+

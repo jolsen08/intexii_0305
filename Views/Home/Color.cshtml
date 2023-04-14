@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Add Color";
+}
+
+@model Color
+
+<div>
+    <h4> Add new Color Record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="post">
+
+            <!-- <label asp-for="Id">Id:</label>
+            <input type="numbesr" asp-for="Id"/><br /> -->
+
+            <label asp-for="Value">Value:</label>
+            <input type="string" asp-for="Value"/><br />
+
+            <label asp-for="Colorid">Colorid:</label>
+            <input type="number" asp-for="Colorid"/><br />
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>

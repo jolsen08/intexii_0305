@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Add Textile Record";
+}
+
+@model Textile
+
+<div>
+    <h4> Add a new Textile record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="post" asp-action="Textile">
+
+            <!-- <label asp-for="Id">Id:</label>
+            <input type="number" asp-for="Id"/><br /> -->
+
+            <label asp-for="Locale">Locale:</label>
+            <input asp-for="Locale"/><br />
+
+            <label asp-for="Textileid">Textile id:</label>
+            <input type="number" asp-for="Textileid"/><br />
+
+            <label asp-for="Description">Description:</label>
+            <input asp-for="Description"/><br />
+
+            <label asp-for="Burialnumber">Burial number:</label>
+            <input asp-for="Burialnumber"/><br />
+
+            <label asp-for="Estimatedperiod">Estimated period:</label>
+            <input asp-for="Estimatedperiod"/><br />
+
+            <label asp-for="Sampledate">Sample date:</label>
+            <input type="datetime-local" asp-for="Sampledate"/><br />
+
+            <label asp-for="Photographeddate">Photographed date:</label>
+            <input type="datetime-local" asp-for="Photographeddate"/><br />
+
+            <label asp-for="Direction">Direction:</label>
+            <input asp-for="Direction"/><br />
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>
+

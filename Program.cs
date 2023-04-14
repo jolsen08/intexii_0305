@@ -4,8 +4,14 @@ using Microsoft.EntityFrameworkCore;
 using System.Configuration;
 using IntexII_0305.Areas.Identity.Data;
 using IntexII_0305.Models;
+using IntexII0305.Models;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Npgsql;
+using Npgsql.TypeMapping;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -17,6 +23,7 @@ builder.Services.AddDbContext<IntexContext>(options =>
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddScoped<IIntexRepository, EFIntexRepository>();
+
 
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
@@ -47,7 +54,23 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.User.RequireUniqueEmail = false;
 });
 
+
+
+
+builder.Services.AddSession(options =>
+    {
+        options.IdleTimeout = TimeSpan.FromMinutes(30);
+        // options.Cookie.HttpOnly = true;
+        options.Cookie.IsEssential = true;
+    });
+
 var app = builder.Build();
+
+
+
+
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())  
@@ -66,6 +89,15 @@ app.Use(async (context, next) =>
     context.Response.Headers.Add("Content-Security-Policy", "default-src 'none'; img-src 'self'; script-src 'unsafe-inline'; style-src 'self' 'unsafe-inline' cdn.jsdelivr.net; base-uri 'self'; form-action 'self'; connect-src 'self'");
     await next();
 });
+
+
+
+
+app.UseSession();
+
+
+
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

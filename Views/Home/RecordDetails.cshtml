@@ -2,82 +2,144 @@
 @using IntexII_0305.Models;
 @model Burialmain
 <p>@Model.Id</p>
-<table>
-    <tr>
-        <th>Sex</th>
-        <th>Head Direction</th>
-        <th>Wrapping</th>
-        <th>Depth</th>
-        <th>Length</th>
-    </tr>
+
+<div >
+<table class="card card-body">
+ 
+        <tr class="text-center" >
+
+            @if (Model.Sex == "M")
+            {
+                <th class="text-center"><div class="d-inline-block border-2">Sex: Male</div></th>
+            }
+            else if (Model.Sex == "F")
+            {
+                <th class="text-center"><div class="d-inline-block border-2">Sex: Female</div></th>
+            }
+            else
+            {
+                <th class="text-center"><div class="d-inline-block border-2">Sex: Not Recorded</div></th>
+            }
+
+ 
+            @if (Model.Headdirection == "W")
+            {
+                <th class="text-center"><div class="d-inline-block border-2">Head Direction: West</div></th>
+            }
+            else if (Model.Headdirection == "E")
+            {
+                <th class="text-center"><div class="d-inline-block border-2">Head Direction: East</div></th>
+            }
+            else
+            {
+                <th class="text-center"><div class="d-inline-block border-2">Head Direction: Not Recorded</div></th>
+            }
+
+            @if(Model.Wrapping == "W")
+            {
+                <th class="text-center"><div class="d-inline-block btn-outline-dark">Wrapping: Fully or Mostly Wrapped</div></th>
+            }
+            else if (Model.Wrapping == "H")
+            {
+                <th class="text-center"><div class="d-inline-block btn-outline-dark">Wrapping: Partially Wrapped</div></th>
+            }
+            else if(Model.Wrapping == "B")
+            {
+                <th class="text-center"><div class="d-inline-block btn-outline-dark">Wrapping: Not wrapped</div></th>
+            }
+            else
+            {
+                <th class="text-center"><div class="d-inline-block btn-outline-dark">Wrapping: Not Recorded</div></th>
+            }
+
+            @if (Model.Depth == null)
+            {
+                <th><div class="d-inline-block card btn-outline-dark">Depth: Not Recorded</div></th>
+            }
+            else
+            {
+                <th><div class="d-inline-block card btn-outline-dark">Depth: @Model.Depth M</div></th>
+            }
+
+            @if (Model.Length == null)
+            {
+                <th><div class="d-inline-block card btn-outline-dark">Length: Not Recorded</div></th>
+            }
+            else
+            {
+                <th><div class="d-inline-block card btn-outline-dark">Length: @Model.Length M</div></th>
+            }
+            
+        </tr>
+
     <tr>
         @if (Model.Sex == "M")
         {
-            <td><img src="/img/egyptian-male.jpg" alt="Male" style="height: 300px;"></td>
+            <td><div class="d-flex justify-content-center"><img src="/img/egyptian-male.jpg" alt="Male" style="height: 300px;"></div></td>
         }
         else if (Model.Sex == "F")
         {
             if (Model.Haircolor == "B" || Model.Haircolor == null)
             {
-                <td><img src="/img/egyptian-female.jpg" alt="Brown" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/egyptian-female.jpg" alt="Brown" style="height: 300px;"></div></td>
             }
             else if (Model.Haircolor == "K")
             {
-                <td><img src="/img/egyptian-black.jpg" alt="Black" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/egyptian-black.jpg" alt="Black" style="height: 300px;"></div></td>
             }
             else if (Model.Haircolor == "A")
             {
-                <td><img src="/img/egyptian-brownred.jpg" alt="BrownRed" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/egyptian-brownred.jpg" alt="BrownRed" style="height: 300px;"></div></td>
             }
             else if (Model.Haircolor == "R")
             {
-                <td><img src="/img/egyptian-red.jpg" alt="Red" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/egyptian-red.jpg" alt="Red" style="height: 300px;"></div></td>
             }
             else if (Model.Haircolor == "D")
             {
-                <td><img src="/img/egyptian-blonde.jpg" alt="Blonde" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/egyptian-blonde.jpg" alt="Blonde" style="height: 300px;"></div></td>
             }
             else
             {
-                <td><img src="/img/egyptian-female.jpg" alt="Brown" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/egyptian-female.jpg" alt="Brown" style="height: 300px;"></div></td>
             }
 
         }
         else{
-            <td>Not Recorded</td>
+            <td></td>
         }
 
 
 
         @if (Model.Headdirection == "E")
         {
-            <td><img src="/img/egyptianhead-east.jpg" alt="East" style="height: 300px;"></td>
+            <td><div class="d-flex justify-content-center"><img src="/img/egyptianhead-east.jpg" alt="East" style="height: 300px;"></div></td>
         }
         else if (Model.Headdirection == "W")
         {
-            <td><img src="/img/egyptianhead-west.jpeg" alt="West" style="height: 300px;"></td>
+            <td><div class="d-flex justify-content-center"><img src="/img/egyptianhead-west.jpeg" alt="West" style="height: 300px;"></div></td>
         }
         else
         {
-            <td>Not Recorded</td>
+            <td></td>
         }
 
 
         @if (Model.Wrapping == "W")
         {
-            <td><img src="/img/fully-wrapped.jpg" alt="fullywrapped" style="height: 300px;"></td>
+            <td><div class="d-flex justify-content-center"><img src="/img/fully-wrapped.jpg" alt="fullywrapped" style="height: 300px;"></div></td>
         }
         else if (Model.Wrapping == "H")
         {
-            <td><img src="/img/half-wrapped.jpg" alt="halfwrapped" style="height: 300px;"></td>
+            <td><div class="d-flex justify-content-center"><img src="/img/half-wrapped.jpg" alt="halfwrapped" style="height: 300px;"></div></td>
         }
         else if (Model.Wrapping == "B")
         {
-            <td><img src="/img/no-wrap.jpg" alt="nowrap" style="height: 300px;"></td>
+            <td><div class="d-flex justify-content-center"><img src="/img/no-wrap.jpg" alt="nowrap" style="height: 300px;"></div></td>
         }
         else
         {
-            <td>Not Recorded</td>
+            <td></td>
         }
 
 
@@ -85,62 +147,71 @@
         {
             if (num <= 0.786)
             {
-                <td><img src="/img/1bar.jpg" alt="nowrap" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/1bar.jpg" alt="nowrap" style="height: 300px;"></div></td>
             }
             else if (num <= 1.572)
             {
-                <td><img src="/img/2bar.jpg" alt="nowrap" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/2bar.jpg" alt="nowrap" style="height: 300px;"></div></td>
             }
             else if (num <= 2.358)
             {
-                <td><img src="/img/3bar.jpg" alt="nowrap" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/3bar.jpg" alt="nowrap" style="height: 300px;"></div></td>
             }
             else if (num <= 3.144)
             {
-                <td><img src="/img/4bar.jpg" alt="nowrap" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/4bar.jpg" alt="nowrap" style="height: 300px;"></div></td>
             }
             else if (num > 3.144)
             {
-                <td><img src="/img/5bar.jpg" alt="nowrap" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/5bar.jpg" alt="nowrap" style="height: 300px;"></div></td>
             }
         }
         else
         {
-            <td>Not Recorded</td>
+            <td></td>
         }
 
         @if (float.TryParse(Model.Length, out float len))
         {
             if (len <= 16.8)
             {
-                <td><img src="/img/1bar.jpg" alt="nowrap" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/1bar.jpg" alt="nowrap" style="height: 300px;"></div></td>
             }
             else if (len <= 33.6)
             {
-                <td><img src="/img/2bar.jpg" alt="nowrap" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/2bar.jpg" alt="nowrap" style="height: 300px;"></div></td>
             }
             else if (len <= 50.4)
             {
-                <td><img src="/img/3bar.jpg" alt="nowrap" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/3bar.jpg" alt="nowrap" style="height: 300px;"></div></td>
             }
             else if (len <= 67.2)
             {
-                <td><img src="/img/4bar.jpg" alt="nowrap" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/4bar.jpg" alt="nowrap" style="height: 300px;"></div></td>
             }
             else if (len > 67.2)
             {
-                <td><img src="/img/5bar.jpg" alt="nowrap" style="height: 300px;"></td>
+                <td><div class="d-flex justify-content-center"><img src="/img/5bar.jpg" alt="nowrap" style="height: 300px;"></div></td>
             }
         }
         else
         {
-            <td>Not Recorded</td>
+            <td></td>
         }
     </tr>
+  
 </table>
+</div>
 
-<form method="post" asp-action="BurialSummary">
-    <input type="hidden" value="@Model.Id" name="id" />
+@* Back button *@
+<form method="post" asp-action="ExitSummary">
+    @*<input type="hidden" value="@Model.Id" name="BurialRecordId" />
+    <input type="hidden" value="@ViewBag.Filters.Sexes" name="Sexes">
+    <input type="hidden" value="@ViewBag.Filters.AgesAtDeath" name="AgesAtDeath">
+    <input type="hidden" value="@ViewBag.Filters.Depths" name="Depths">
+    <input type="hidden" value="@ViewBag.Filters.HeadDirections" name="HeadDirections">
+    <input type="hidden" value="@ViewBag.Filters.Wrappings" name="Wrappings">
+    <input type="hidden" value="@ViewBag.Filters.HairColors" name="HairColors"> *@
     <button type="Submit">Back</button>
 </form>
 

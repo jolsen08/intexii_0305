@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Add Photodatum Record";
+}
+
+@model Photodatum
+
+<div>
+    <h4> Add a new Photodatum record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="post">
+           
+            <!-- <label asp-for="Id">Id:</label>
+            <input type="number" asp-for="Id"/><br /> -->
+
+            <label asp-for="Description">Description:</label>
+            <input asp-for="Description"/><br />
+
+            <label asp-for="Filename">File name:</label>
+            <input asp-for="Filename"/><br />
+
+            <label asp-for="Photodataid">Photodata id:</label>
+            <input type="number" asp-for="Photodataid"/><br />
+
+            <label asp-for="Date">Date:</label>
+            <input type="datetime-local" asp-for="Date"/><br />
+
+            <label asp-for="Url">Url:</label>
+            <input asp-for="Url"/><br />
+            
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Add Dimension Record";
+}
+
+@model Dimension
+
+<div>
+    <h4> Add a new Dimension record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="post">
+           
+            <!-- <label asp-for="Id">Id:</label>
+            <input type="number" asp-for="Id"/><br /> -->
+
+            <label asp-for="Dimensiontype">Dimension Type:</label>
+            <input asp-for="Dimensiontype"/><br />
+
+            <label asp-for="Value">Value:</label>
+            <input asp-for="Value"/><br />
+
+            <label asp-for="Dimensionid">Dimension id:</label>
+            <input type="number" asp-for="Dimensionid"/><br />
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ySzDshWqTwlZmPbVAgDgP5IOaid7t4PlRltZ8CigOtk=",
+  "Hash": "orztkWfEqZ48Of1NqxED8HVepMD+5KLqVgXcQSymjko=",
   "Source": "IntexII_0305",
   "BasePath": "_content/IntexII_0305",
   "Mode": "Default",
@@ -1375,6 +1375,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\half-wrapped.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\BYU Rental\\Documents\\IntexII\\IntexII_0305\\wwwroot\\img\\newplot.jpg",
+      "SourceId": "IntexII_0305",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\BYU Rental\\Documents\\IntexII\\IntexII_0305\\wwwroot\\",
+      "BasePath": "_content/IntexII_0305",
+      "RelativePath": "img/newplot.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\newplot.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\BYU Rental\\Documents\\IntexII\\IntexII_0305\\wwwroot\\img\\newplotJ.jpg",
+      "SourceId": "IntexII_0305",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\BYU Rental\\Documents\\IntexII\\IntexII_0305\\wwwroot\\",
+      "BasePath": "_content/IntexII_0305",
+      "RelativePath": "img/newplotJ.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\newplotJ.jpg"
     },
     {
       "Identity": "C:\\Users\\BYU Rental\\Documents\\IntexII\\IntexII_0305\\wwwroot\\img\\no-wrap.jpg",

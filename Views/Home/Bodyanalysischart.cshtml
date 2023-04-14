@@ -1,0 +1,96 @@
+@{
+    ViewData["Title"] = "Add Body Analysis Chart";
+}
+
+@model Bodyanalysischart
+
+<div>
+    <h4> Add new Body Analysis Chart Record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="post">
+<!-- 
+            <label asp-for="Id">Id:</label>
+            <input type="number" asp-for="Id"/><br /> -->
+
+            <label asp-for="Femur">Femur:</label>
+            <input type="string" asp-for="Femur"/><br />
+
+            <label asp-for="Humerusheaddiameter">Humerusheaddiameter:</label>
+            <input type="string" asp-for="Humerusheaddiameter"/><br />
+
+            <label asp-for="Squamossuture">Squamossuture:</label>
+            <input type="string" asp-for="Squamossuture"/><br />
+
+            <label asp-for="CariesPeriodontalDisease">CariesPeriodontalDisease:</label>
+            <input type="string" asp-for="CariesPeriodontalDisease"/><br />
+
+            <label asp-for="MedicalIpRamus">MedicalIpRamus:</label>
+            <input type="string" asp-for="MedicalIpRamus"/><br />
+
+            <label asp-for="Perservationindex">Perservationindex:</label>
+            <input type="number" asp-for="Perservationindex"/><br />
+
+            <label asp-for="Gonion">Gonion:</label>
+            <input type="string" asp-for="Gonion"/><br />
+
+            <label asp-for="Humeruslength">Humeruslength:</label>
+            <input type="number" asp-for="Humeruslength"/><br />
+
+            <label asp-for="Femurlength">Femurlength:</label>
+            <input type="number" asp-for="Femurlength"/><br />
+
+            <label asp-for="Ventralarc">Ventralarc:</label>
+            <input type="boolean" asp-for="Ventralarc"/><br />
+
+            <label asp-for="Tootheruptionageestimation">Tootheruptionageestimation:</label>
+            <input type="number" asp-for="Tootheruptionageestimation"/><br />
+
+            <label asp-for="Nuchalcrest">Nuchalcrest:</label>
+            <input type="string" asp-for="Nuchalcrest"/><br />
+
+            <label asp-for="Estimatestature">Estimatestature:</label>
+            <input type="number" asp-for="Estimatestature"/><br />
+
+            <label asp-for="Notes">Notes:</label>
+            <input type="string" asp-for="Notes"/><br />
+
+            <label asp-for="Osteophytosis">Osteophytosis:</label>
+            <input type="string" asp-for="Osteophytosis"/><br />
+
+            <label asp-for="Subpubicangle">Subpubicangle:</label>
+            <input type="string" asp-for="Subpubicangle"/><br />
+
+            <label asp-for="Robust">Robust:</label>
+            <input type="boolean" asp-for="Robust"/><br />
+
+            <label asp-for="Femurheaddiameter">Femurheaddiameter:</label>
+            <input type="string" asp-for="Femurheaddiameter"/><br />
+
+            <label asp-for="Sciaticnotch">Sciaticnotch:</label>
+            <input type="string" asp-for="Sciaticnotch"/><br />
+
+            <label asp-for="Supraorbitalridges">Supraorbitalridges:</label>
+            <input type="string" asp-for="Supraorbitalridges"/><br />
+
+            <label asp-for="Orbitedge">Orbitedge:</label>
+            <input type="string" asp-for="Orbitedge"/><br />
+
+            <label asp-for="Toothattrition">Toothattrition:</label>
+            <input type="number" asp-for="Toothattrition"/><br />
+
+            <label asp-for="Sphenooccipitalsynchondrosis">Sphenooccipitalsynchondrosis:</label>
+            <input type="string" asp-for="Sphenooccipitalsynchondrosis"/><br />
+
+            <label asp-for="Parietalblossing">Parietalblossing:</label>
+            <input type="boolean" asp-for="Parietalblossing"/><br />
+
+            <label asp-for="Observations">Observations:</label>
+            <input type="string" asp-for="Observations"/><br />
+
+            <label asp-for="Humerus">Humerus:</label>
+            <input type="string" asp-for="Humerus"/><br />
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>

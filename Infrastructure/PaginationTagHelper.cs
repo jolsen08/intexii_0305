@@ -30,6 +30,7 @@ namespace IntexII_0305.Infrastructure
 
         //Different than the View Context
         public PageInfo PageBlah { get; set; }
+        public FilterTypes PageFilters { get; set; }
         public string PageAction { get; set; }
 
         //These variables are for the styling of the page numbers at the bottom of the page.
@@ -53,7 +54,41 @@ namespace IntexII_0305.Infrastructure
             {
                 //Making a new tagbuilder variable for a tags
                 TagBuilder tb = new TagBuilder("a");
-                tb.Attributes["href"] = uh.Action(PageAction, new { pageNum = i });
+
+                if (PageFilters != null)
+                {
+                    tb.Attributes["href"] = uh.Action(
+                   PageAction,
+                   new
+                   {
+                       pageNum = i,
+                     
+        
+                       Sexes = PageFilters.Sexes,
+                       AgesAtDeath = PageFilters.AgesAtDeath,
+                       Depths = PageFilters.Depths,
+                       HeadDirections = PageFilters.HeadDirections,
+                       Wrappings = PageFilters.Wrappings,
+                       HairColors = PageFilters.HairColors,
+                   });
+                }
+                else
+                {
+                    tb.Attributes["href"] = uh.Action(
+                     PageAction,
+                     new
+                     {
+                         pageNum = i,
+                  
+                         Sexes = PageFilters?.Sexes,
+                         AgesAtDeath = PageFilters?.AgesAtDeath,
+                         Depths = PageFilters?.Depths,
+                         HeadDirections = PageFilters?.HeadDirections,
+                         Wrappings = PageFilters?.Wrappings,
+                         HairColors = PageFilters?.HairColors,
+                     });
+                }
+               
 
                 //This if statement is for styling
                 if (PageClassesEnabled)

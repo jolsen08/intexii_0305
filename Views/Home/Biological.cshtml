@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Add Biological";
+}
+
+@model Biological
+
+<div>
+    <h4> Add new Biological Record: </h4>
+    <div style="display: grid; grid-template-columns: auto auto">
+        <form method="post">
+
+            <!-- <label asp-for="Id">Id:</label>
+            <input type="number" asp-for="Id"/><br /> -->
+
+            <label asp-for="Bagnumber">Bagnumber:</label>
+            <input type="number" asp-for="Bagnumber"/><br />
+
+            <label asp-for="Previouslysampled">Previouslysampled:</label>
+            <input type="string" asp-for="Previouslysampled"/><br />
+
+            <label asp-for="Initials">Initials:</label>
+            <input type="string" asp-for="Initials"/><br />
+
+            <label asp-for="Date">Date:</label>
+            <input type="datetime-local" asp-for="Date"/><br />
+
+            <label asp-for="Notes">Notes:</label>
+            <input type="string" asp-for="Notes"/><br />
+
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</div>
